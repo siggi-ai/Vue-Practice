@@ -2,7 +2,7 @@
   <div class="main">
     <h1>Binding Classes</h1>
     <h2 class="underline" v-bind:class="state">Status</h2>
-    <h3 v-bind:class="{ especially: IsEspecially }">
+    <h3 :class="{ especially: active }">
       Ist dies ein besonderer Text
     </h3>
   </div>
@@ -14,9 +14,9 @@ export default {
   data() {
     return {
       state: "success",
-      isEspecially: true,
-    };
-  },
+      active: true,
+    }
+  }
 };
 </script>
 
