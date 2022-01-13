@@ -10,11 +10,18 @@
         underline: true,
         especially_bold: active && IsBold,
         especially: active && !IsBold,
-        only_bold: !IsEspecially && IsBold
+        only_bold: !IsEspecially && IsBold,
       }"
     >
       Ein Array mit mehreren Klassen
     </h4>
+    <div
+      v-bind:style="{
+        color: highlightColor,
+      }"
+    >
+      Inline Stlye
+    </div>
   </div>
 </template>
 
@@ -26,6 +33,7 @@ export default {
       state: "success",
       active: true,
       isBold: true,
+      highlightColor: "#4FC08D",
     };
   },
 };
@@ -36,7 +44,7 @@ export default {
   background-color: #000;
   color: white;
   padding: 10px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .underline {
   text-decoration: underline;
