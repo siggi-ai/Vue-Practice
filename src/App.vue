@@ -1,15 +1,7 @@
 <template>
   <div class="main">
     <h1>Binding Styles</h1>
-    <div
-      v-bind:style="{
-        color: highlightColor,
-        'font-size': divSize + 'px',
-        padding: '20px',
-      }"
-    >
-      Inline Stlye
-    </div>
+    <div v-bind:style="divStyleObject">Inline Stlye</div>
   </div>
 </template>
 
@@ -18,8 +10,11 @@ export default {
   name: "App",
   data() {
     return {
-      highlightColor: "#4FC08D",
-      divSize: "50",
+      divStyleObject: {
+        color: "orange",
+        fontSize: "50px",
+        padding: "2px",
+      },
     };
   },
 };
