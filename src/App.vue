@@ -1,15 +1,9 @@
 <template>
   <div class="main">
     <h1>Conditional Rendering</h1>
-    <div v-if="inzidenzWert > 165" style="background-color: red; color: white">
-      Die Inzidenz liegt über 165!
-    </div>
-    <div v-if="inzidenzWert > 100" style="background-color: red; color: white">
-      Die Inzidenz liegt unter 165!
-    </div>
-    <div v-if="inzidenzWert > 50" style="background-color: red; color: white">
-      Die Inzidenz liegt über 50, aber unter 100!
-    </div>
+    <h2 v-if="display === true">VUE 3</h2>
+    <h2 v-if="display === true">VSC</h2>
+    <h2 v-if="display === true">HCS</h2>
   </div>
 </template>
 
@@ -18,7 +12,7 @@ export default {
   name: "App",
   data() {
     return {
-      inzidenzWert: 75,
+      display: true
     };
   },
 };
