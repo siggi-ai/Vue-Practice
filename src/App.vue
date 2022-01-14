@@ -10,7 +10,7 @@ export default {
   name: "App",
   data() {
     return {
-      display: true,
+      display: false,
     };
   },
 };
