@@ -5,6 +5,7 @@
       v-bind:style="{
         color: highlightColor,
         'font-size': divSize + 'px',
+        padding: '20px',
       }"
     >
       Inline Stlye
