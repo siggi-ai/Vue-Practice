@@ -1,7 +1,15 @@
 <template>
   <div class="main">
-    <h1>Binding Styles</h1>
-    <div v-bind:style="[baseStyleObject, successStyleObject]">Inline Stlye</div>
+    <h1>Conditional Rendering</h1>
+    <div v-if="inzidenzWert > 165" style="background-color: red; color: white">
+      Die Inzidenz liegt über 165!
+    </div>
+    <div v-if="inzidenzWert > 100" style="background-color: red; color: white">
+      Die Inzidenz liegt unter 165!
+    </div>
+    <div v-if="inzidenzWert > 50" style="background-color: red; color: white">
+      Die Inzidenz liegt über 50, aber unter 100!
+    </div>
   </div>
 </template>
 
@@ -10,15 +18,7 @@ export default {
   name: "App",
   data() {
     return {
-      baseStyleObject: {
-        fontSize: "20px",
-        padding: "2px",
-      },
-      successStyleObject: {
-        color: "green",
-        backgroundColor: "lightblue",
-        border: "1 px solid",
-      }
+      inzidenzWert: 75,
     };
   },
 };
@@ -28,8 +28,5 @@ export default {
 .main {
   padding: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.underline {
-  text-decoration: underline;
 }
 </style>
