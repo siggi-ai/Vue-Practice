@@ -1,9 +1,11 @@
 <template>
   <div class="main">
     <h1>Conditional Rendering</h1>
-    <h2 v-if="display === true">VUE 3</h2>
-    <h2 v-if="display === true">VSC</h2>
-    <h2 v-if="display === true">HCS</h2>
+    <template v-if="display === true">
+      <h2>VUE 3</h2>
+      <h2>VSC</h2>
+      <h2>HCS</h2>
+    </template>
   </div>
 </template>
 
@@ -12,7 +14,7 @@ export default {
   name: "App",
   data() {
     return {
-      display: true
+      display: true,
     };
   },
 };
