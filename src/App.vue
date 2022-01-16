@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h1>List Rendering</h1>
-    <h2 v-for="name in names" :key="name">{{ name }}</h2>
+    <h2 v-for="(name, index) in names" :key="index">{{ name }}</h2>
   </div>
 </template>
 
