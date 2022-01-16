@@ -2,7 +2,7 @@
   <div class="main">
     <h1>List Rendering</h1>
     <h2 v-for="(fullName, index) in fullNames" :key="index">
-      {{ fullName.name }}, {{ fullName.description }}</h2>
+      {{ fullName.name }}, {{ fullName.description }}, {{ fullName.age }}</h2>
   </div>
 </template>
 
@@ -12,9 +12,9 @@ export default {
   data() {
     return {
       fullNames: [
-        { name: "Hans", description: "Engineer" },
-        { name: "Gabi", description: "Politician" },
-        { name: "Melanie", description: "Author" },
+        { name: "Hans", description: "Engineer", age: 32 },
+        { name: "Gabi", description: "Politician", age: 42 },
+        { name: "Melanie", description: "Author", age: 29 },
       ],
     };
   },
