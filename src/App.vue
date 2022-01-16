@@ -2,7 +2,14 @@
   <div class="main">
     <h1>List Rendering</h1>
     <h2 v-for="(fullName, index) in fullNames" :key="index">
-      {{ fullName.name }}, {{ fullName.description }}, {{ fullName.age }}</h2>
+      {{ fullName.name }}, {{ fullName.description }}, {{ fullName.age }}
+    </h2>
+    <h2 v-for="(fullPlace, index) in fullPlaces" :key="index">
+      {{ fullPlace.name }}, {{ fullPlace.description }}
+    </h2>
+    <h2 v-for="(character, index) in fullNames.characters" :key="index">
+      {{ character }}
+    </h2>
   </div>
 </template>
 
@@ -12,9 +19,29 @@ export default {
   data() {
     return {
       fullNames: [
-        { name: "Hans", description: "Engineer", age: 32 },
-        { name: "Gabi", description: "Politician", age: 42 },
-        { name: "Melanie", description: "Author", age: 29 },
+        {
+          name: "Hans",
+          description: "Engineer",
+          age: 32,
+          characters: ["cool", "reliable", "fancy"],
+        },
+        {
+          name: "Gabi",
+          description: "Politician",
+          age: 42,
+          characters: ["eloquent", "intelligent", "greedy"],
+        },
+        {
+          name: "Melanie",
+          description: "Author",
+          age: 29,
+          characters: ["playful", "creative", "unreliable"],
+        },
+      ],
+      fullPlaces: [
+        { name: "Hamburg", description: "Northern Germany" },
+        { name: "Berlin", description: "East Germany" },
+        { name: "Munich", description: "South Germany" },
       ],
     };
   },
