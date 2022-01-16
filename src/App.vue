@@ -1,7 +1,7 @@
 <template>
   <div class="main">
-    <h1>Conditional Rendering</h1>
-    <div v-show="display">offensichtlich ist display true</div>
+    <h1>List Rendering</h1>
+    <h2 v-for="name in names" :key="name">{{ name }}</h2>
   </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
   name: "App",
   data() {
     return {
-      display: true,
+      names: ["Hans", "Gabi", "Peter"],
     };
   },
 };
