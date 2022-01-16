@@ -1,15 +1,15 @@
 <template>
   <div class="main">
     <h1>List Rendering</h1>
-    <h2 v-for="(fullName, index) in fullNames" :key="index">
-      {{ fullName.name }}, {{ fullName.description }}, {{ fullName.age }}
-    </h2>
-    <h3 v-for="(fullPlace, index) in fullPlaces" :key="index">
-      {{ fullPlace.name }}, {{ fullPlace.description }}
-    </h3>
-    <h4 v-for="(character, index) in fullName.characters" :key="index">
-      {{ character }}
-    </h4>
+    <template v-for="(fullName, index) in fullNames" :key="index">
+      <h2>
+        {{ fullName.name }}, {{ fullName.description }}, {{ fullName.age }}
+      </h2>
+      <h4 v-for="(character, index) in fullName.characters" :key="index">
+        {{ character }}
+      </h4>
+      <br>
+    </template>
   </div>
 </template>
 
