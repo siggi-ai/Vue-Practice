@@ -8,7 +8,7 @@
       <h4 v-for="(character, index) in fullName.characters" :key="index">
         {{ character }}
       </h4>
-      <br>
+      <br />
     </template>
   </div>
 </template>
