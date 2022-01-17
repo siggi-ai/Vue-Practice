@@ -1,8 +1,8 @@
 <template>
   <div class="main">
     <h1>List Rendering</h1>
-    <template v-for="(item, key) in fullNames" :key="key">
-      <h3>{{ key }}: {{ item }}</h3>
+    <template v-for="(item, key, index) in fullNames" :key="key">
+      <h3>{{ key }}: {{ item }} ({{ index }})</h3>
     </template>
   </div>
 </template>
