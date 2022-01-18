@@ -16,11 +16,6 @@ export default {
       name: "Angela",
     };
   },
-  methods: {
-    multiply(num) {
-      return (num * (100 + this.taxRate)) / 100;
-    },
-  },
 };
 </script>
 
