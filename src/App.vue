@@ -1,14 +1,9 @@
 <template>
   <div class="main">
-    <h4>
-      Multipliziere die Variable price mit dem normalen Mehrwertsteuersatz
-    </h4>
+    <h4>Event Handling</h4>
+    <h1>{{ name }}</h1>
     <div>
-      Steuersatz: {{ taxRate }}
-      <br />
-      Netto-Preis: {{ price2 }}
-      <br />
-      Brutto-Preis: {{ multiply(price2) }}
+      <button v-on:click="name = 'Annalena'">Ändere den Namen</button>
     </div>
   </div>
 </template>
@@ -18,9 +13,7 @@ export default {
   name: "App",
   data() {
     return {
-      price1: 100,
-      price2: 200,
-      taxRate: 19,
+      name: "Angela",
     };
   },
   methods: {
