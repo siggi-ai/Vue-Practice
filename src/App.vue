@@ -1,8 +1,15 @@
 <template>
   <div class="main">
-    <h1>Methods</h1>
-    <h4>Summe von 1 + 2 + 3 + 4 + 5 + 6 = {{ add(1, 2, 3, 4, 5, 6) }}</h4>
-    <h4>Summe von 1 + 2 + 3 + 5 + 8 + 13 = {{ add(1, 2, 3, 5, 8, 13) }}</h4>
+    <h4>
+      Multipliziere die Variable price mit dem normalen Mehrwertsteuersatz
+    </h4>
+    <div>
+      Steuersatz: {{ taxRate }}
+      <br />
+      Netto-Preis: {{ price2 }}
+      <br />
+      Brutto-Preis: {{ multiply(price2) }}
+    </div>
   </div>
 </template>
 
@@ -10,11 +17,15 @@
 export default {
   name: "App",
   data() {
-    return {};
+    return {
+      price1: 100,
+      price2: 200,
+      taxRate: 19,
+    };
   },
   methods: {
-    add(a, b, c, d, e, f,) {
-      return a + b + c + d + e + f;
+    multiply(num) {
+      return (num * (100 + this.taxRate)) / 100;
     },
   },
 };
