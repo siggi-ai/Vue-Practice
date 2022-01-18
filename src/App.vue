@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h1>Lists and Keys</h1>
-    <div v-for="name in names">
+    <div v-for="name in names" :key="name">
       <h3>{{ name }}</h3>
       <input placeholder="Nachname" />
     </div>
