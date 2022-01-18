@@ -3,7 +3,7 @@
     <h4>Event Handling</h4>
     <h1>{{ name }}</h1>
     <div>
-      <button v-on:click="name = 'Annalena'">Ändere den Namen</button>
+      <button v-on:mouseover="name = 'Annalena'">Ändere den Namen</button>
     </div>
   </div>
 </template>
