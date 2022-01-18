@@ -1,10 +1,7 @@
 <template>
   <div class="main">
-    <h1>Conditional List Rendering</h1>
-
-    <template v-for="name in names" :key="name">
-      <h3 v-if="name === 'Annalena'">{{ name }}</h3>
-    </template>
+    <h1>Methods</h1>
+    <h4>Summe von 1 + 2 + 3 + 4 + 5 + 6 = {{ add() }}</h4>
   </div>
 </template>
 
@@ -12,9 +9,12 @@
 export default {
   name: "App",
   data() {
-    return {
-      names: ["Angela", "Armin", "Annalena", "Olaf"],
-    };
+    return {};
+  },
+  methods: {
+    add() {
+      return 1 + 2 + 3 + 4 + 5 + 6;
+    },
   },
 };
 </script>
