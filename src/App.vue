@@ -1,9 +1,10 @@
 <template>
   <div class="main">
     <h4>Event Handling</h4>
-    <h1>{{ name }}</h1>
+    <h1>{{ count }}</h1>
     <div>
-      <button v-on:mouseover="name = 'Annalena'">Ändere den Namen</button>
+      <button>Plus</button>
+      <button>Plus</button>
     </div>
   </div>
 </template>
@@ -13,7 +14,7 @@ export default {
   name: "App",
   data() {
     return {
-      name: "Angela",
+      count: 0,
     };
   },
 };
