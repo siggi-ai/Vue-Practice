@@ -3,8 +3,8 @@
     <h4>Event Handling</h4>
     <h1>{{ count }}</h1>
     <div>
-      <button>Plus</button>
-      <button>Plus</button>
+      <button v-on:click="count += 1">Plus</button>
+      <button v-on:click="count -= 1">Minus</button>
     </div>
   </div>
 </template>
