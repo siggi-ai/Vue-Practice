@@ -5,8 +5,10 @@
     <div>
       <button v-on:click="changeCount(1, $event)">Plus 1</button>
       <button v-on:click="changeCount(5, $event)">Plus 5</button>
+      <button v-on:click="changeCount(10, $event)">Plus 10</button>
       <button v-on:click="changeCount(-1, $event)">Minus 1</button>
       <button v-on:click="changeCount(-5, $event)">Minus 5</button>
+      <button v-on:click="changeCount(-10, $event)">Minus -10</button>
     </div>
   </div>
 </template>
