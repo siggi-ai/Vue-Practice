@@ -7,7 +7,7 @@
         <label class="label" for="firstName">
           <span class="label-text">Vorname</span>
         </label>
-        <br>
+        <br />
         <input
           type="text"
           id="firstname"
@@ -16,16 +16,29 @@
           class="input input-bordered"
         />
         <div>
-          <br>
+          <br />
           <label class="label" for="lastName">
             <span class="label-text">Nachname</span>
           </label>
-          <br>
+          <br />
           <input
             type="text"
             id="lastname"
             v-model="form.lastName"
             placeholder="Nachname"
+            class="input input-bordered"
+          />
+        </div>
+        <div>
+          <br />
+          <label class="label" for="hobbies">
+            <span class="label-text">Hobbys</span>
+          </label>
+          <br />
+          <textarea
+            id="hobbies"
+            v-model="form.hobbies"
+            placeholder="Deine Hobbys"
             class="input input-bordered"
           />
         </div>
@@ -48,7 +61,8 @@ export default {
       form: {
         firstName: "Klaus",
         lastName: "Fischer",
-      }
+        hobbies: "Fußball, Tor des Monats",
+      },
     };
   },
 };
@@ -61,6 +75,6 @@ export default {
 }
 
 input {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 </style>
