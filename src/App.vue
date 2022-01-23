@@ -41,9 +41,13 @@
 export default {
   name: "App",
   data() {
-    return {};
+    return {
+      form: {
+        firstName: "Klaus",
+        lastName: "Fischer",
+      }
+    };
   },
-  methods: {},
 };
 </script>
 
