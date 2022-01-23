@@ -59,4 +59,8 @@ export default {
   padding: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
+input {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 </style>
