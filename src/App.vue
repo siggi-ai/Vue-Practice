@@ -4,6 +4,12 @@
     <label class="label" for="firstName">
       <span class="label-text">Vorname</span>
     </label>
+    <input 
+      type="text"
+      id="firstname"
+      v-model="form.firstName"
+      placeholder="Vorname"
+      class="input input-bordered">
   </div>
 </template>
 
