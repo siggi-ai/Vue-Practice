@@ -7,6 +7,7 @@
         <label class="label" for="firstName">
           <span class="label-text">Vorname</span>
         </label>
+        <br>
         <input
           type="text"
           id="firstname"
@@ -15,9 +16,11 @@
           class="input input-bordered"
         />
         <div>
+          <br>
           <label class="label" for="lastName">
             <span class="label-text">Nachname</span>
           </label>
+          <br>
           <input
             type="text"
             id="lastname"
