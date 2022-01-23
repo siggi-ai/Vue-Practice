@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h4>Event Handling</h4>
+    <h4>Form Handling</h4>
     <h1>{{ name }}</h1>
     <h1>{{ count }}</h1>
     <div>
