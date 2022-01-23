@@ -1,7 +1,9 @@
 <template>
   <div class="main">
     <h1>Form Handling</h1>
-    <label class="label" for="firstName"></label>
+    <label class="label" for="firstName">
+      <span class="label-text">Vorname</span>
+    </label>
   </div>
 </template>
 
