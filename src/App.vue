@@ -59,6 +59,23 @@
             <option value="green">grün</option>
           </select>
         </div>
+        <div>
+          <br />
+          <label class="label" for="favoriteArtists">
+            <span class="label-text">Lieblingskünstler</span>
+          </label>
+          <br />
+          <select
+            id="color"
+            class="select select-bordered w-full"
+            v-model="form.favoriteArtists" multiple
+          >
+            <option value="">Wähle Deine Lieblingskünstler</option>
+            <option value="Kahlo">Kahlo</option>
+            <option value="Picasso">Picasso</option>
+            <option value="Chagall">Chagall</option>
+          </select>
+        </div>
       </div>
     </form>
     <h2>Ausgabebereich</h2>
@@ -80,6 +97,7 @@ export default {
         lastName: "Fischer",
         hobbies: "Fußball, Tor des Monats",
         color: "blue",
+        favoriteArtists: ["Pablo Picasso"],
       },
     };
   },
