@@ -42,6 +42,23 @@
             class="input input-bordered"
           />
         </div>
+        <div>
+          <br />
+          <label class="label" for="color">
+            <span class="label-text">Lieblingsfarbe</span>
+          </label>
+          <br />
+          <select
+            id="color"
+            class="select select-bordered w-full"
+            v-model="form.color"
+          >
+            <option value="">Wähle Deine Lieblingsfarbe</option>
+            <option value="blue">blau</option>
+            <option value="red">rot</option>
+            <option value="green">grün</option>
+          </select>
+        </div>
       </div>
     </form>
     <h2>Ausgabebereich</h2>
@@ -62,6 +79,7 @@ export default {
         firstName: "Klaus",
         lastName: "Fischer",
         hobbies: "Fußball, Tor des Monats",
+        color: "blue",
       },
     };
   },
