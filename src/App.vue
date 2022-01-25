@@ -68,13 +68,24 @@
           <select
             id="color"
             class="select select-bordered w-full"
-            v-model="form.favoriteArtists" multiple
+            v-model="form.favoriteArtists"
+            multiple
           >
             <option value="">Wähle Deine Lieblingskünstler</option>
             <option value="Kahlo">Kahlo</option>
             <option value="Picasso">Picasso</option>
             <option value="Chagall">Chagall</option>
           </select>
+        </div>
+        <div>
+          <br />
+          <label class="label" for="favoriteArtists">
+            <input
+             type="checkbox">
+            <span class="label-text">Hast Du schonmal das Bild des Monats produziert?</span>
+          <br />
+
+          </label>
         </div>
       </div>
     </form>
@@ -98,6 +109,7 @@ export default {
         hobbies: "Fußball, Tor des Monats",
         color: "blue",
         favoriteArtists: ["Pablo Picasso"],
+        pictureOfTheMonth: false,
       },
     };
   },
