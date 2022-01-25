@@ -81,7 +81,11 @@
           <br />
           <label class="label" for="favoriteArtists">
             <input
-             type="checkbox">
+             type="checkbox"
+             id="picture"
+             v-model="form.pictureOfTheMonth"
+             class="checkbox"
+            >
             <span class="label-text">Hast Du schonmal das Bild des Monats produziert?</span>
           <br />
 
