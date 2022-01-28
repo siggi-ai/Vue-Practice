@@ -111,7 +111,7 @@ export default {
   data() {
     return {
       form: {
-        firstName: "Klaus",
+        firstName: "Hans",
         lastName: "Fischer",
         hobbies: "Fußball, Tor des Monats",
         color: "blue",
