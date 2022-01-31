@@ -112,7 +112,7 @@ export default {
     return {
       form: {
         firstName: "Kai",
-        lastName: "Fischer",
+        lastName: "Tischler",
         hobbies: "Fußball, Tor des Monats",
         color: "blue",
         favoriteArtists: ["Pablo Picasso"],
