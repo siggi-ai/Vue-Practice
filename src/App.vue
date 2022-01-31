@@ -160,6 +160,7 @@ export default {
         favoriteArtists: ["Pablo Picasso"],
         pictureOfTheMonth: false,
         type: [],
+        yearsActive: "",
       },
     };
   },
