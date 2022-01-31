@@ -136,6 +136,48 @@
             <br />
           </label>
         </div>
+        <div>
+          <br />
+          <label class="label" for="active">
+            <input
+              type="radio"
+              id="years1-2"
+              v-model="form.yearsActive"
+              value="1 bis 2 Jahre"
+              class="radio"
+            />
+            <span class="label-text">1-2 Jahre</span>
+            <br />
+          </label>
+        </div>
+        <div>
+          <br />
+          <label class="label" for="active">
+            <input
+              type="radio"
+              id="years3-4"
+              v-model="form.yearsActive"
+              value="3 bis 4 Jahre"
+              class="radio"
+            />
+            <span class="label-text">3-4 Jahre</span>
+            <br />
+          </label>
+        </div>
+        <div>
+          <br />
+          <label class="label" for="active">
+            <input
+              type="radio"
+              id="years5"
+              v-model="form.yearsActive"
+              value="mehr als 4 Jahre"
+              class="radio"
+            />
+            <span class="label-text">mehr als 4 Jahre</span>
+            <br />
+          </label>
+        </div>
       </div>
     </form>
     <h2>Ausgabebereich</h2>
