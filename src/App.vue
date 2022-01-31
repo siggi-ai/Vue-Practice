@@ -94,6 +94,21 @@
             <br />
           </label>
         </div>
+        <div>
+          <br />
+          <label class="label" for="favoriteArtists">
+            <input
+              type="checkbox"
+              id="painter"
+              v-model="form.type"
+              true-value="ja"
+              false-value="nein"
+              class="checkbox"
+            />
+            <span class="label-text">Type of Artist</span>
+            <br />
+          </label>
+        </div>
       </div>
     </form>
     <h2>Ausgabebereich</h2>
