@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h2>Eingabebereich</h2>
-    <form action="">
+    <form action="submitForm">
       <div>
         <h1>Form Handling</h1>
         <label class="label" for="firstName">
@@ -210,6 +210,9 @@ export default {
 </script>
 
 <style scoped>
+body {
+  display: flex;
+}
 .main {
   padding: 10px;
   font-family: Georgia, "Times New Roman", Times, serif;
