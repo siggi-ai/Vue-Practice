@@ -96,7 +96,7 @@
         </div>
         <div>
           <br />
-          <label class="label" for="favoriteArtists">
+          <label class="label" for="typeArtists">
             <input
               type="checkbox"
               id="painter"
@@ -110,12 +110,26 @@
         </div>
         <div>
           <br />
-          <label class="label" for="favoriteArtists">
+          <label class="label" for="typeArtists">
             <input
               type="checkbox"
               id="sculptor"
               v-model="form.type"
               value="sculptor"
+              class="checkbox"
+            />
+            <span class="label-text">Type of Artist</span>
+            <br />
+          </label>
+        </div>
+        <div>
+          <br />
+          <label class="label" for="favoriteArtists">
+            <input
+              type="checkbox"
+              id="dancer"
+              v-model="form.type"
+              value="dancer"
               class="checkbox"
             />
             <span class="label-text">Type of Artist</span>
