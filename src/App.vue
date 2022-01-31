@@ -117,6 +117,7 @@ export default {
         color: "blue",
         favoriteArtists: ["Pablo Picasso"],
         pictureOfTheMonth: false,
+        type: [],
       },
     };
   },
