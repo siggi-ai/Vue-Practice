@@ -104,7 +104,7 @@
               value="painter"
               class="checkbox"
             />
-            <span class="label-text">Type of Artist</span>
+            <span class="label-text">painter</span>
             <br />
           </label>
         </div>
@@ -118,13 +118,13 @@
               value="sculptor"
               class="checkbox"
             />
-            <span class="label-text">Type of Artist</span>
+            <span class="label-text">sculptor</span>
             <br />
           </label>
         </div>
         <div>
           <br />
-          <label class="label" for="favoriteArtists">
+          <label class="label" for="typeArtists">
             <input
               type="checkbox"
               id="dancer"
@@ -132,7 +132,7 @@
               value="dancer"
               class="checkbox"
             />
-            <span class="label-text">Type of Artist</span>
+            <span class="label-text">dancer</span>
             <br />
           </label>
         </div>
