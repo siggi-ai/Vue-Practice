@@ -11,7 +11,7 @@
         <input
           type="text"
           id="firstname"
-          v-model="form.firstName"
+          v-model.trim="form.firstName"
           placeholder="Vorname"
           class="input input-bordered"
         />
