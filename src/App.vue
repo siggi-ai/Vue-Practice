@@ -7,7 +7,8 @@
         <label for="age">
           <span>Alter in Jahren</span>
         </label>
-        <input type="text" id="age" v-model.number="form.age" />
+        <br />
+        <input type="text" id="age" v-model.number.lazy="form.age" />
       </div>
       <button>Daten übermitteln</button>
     </form>
