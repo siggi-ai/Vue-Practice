@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h2>Eingabebereich</h2>
-    <form action="submitForm">
+    <form v-on:submit="submitForm">
       <div>
         <h1>Form Handling</h1>
         <label class="label" for="firstName">
@@ -178,9 +178,10 @@
             <br />
           </label>
         </div>
+        <br />
         <div>
-      <button class="btn">Daten übermitteln</button>
-    </div>
+          <button class="btn">Daten übermitteln</button>
+        </div>
       </div>
     </form>
     <h2>Ausgabebereich</h2>
@@ -210,7 +211,8 @@ export default {
     };
   },
   methods: {
-    submitForm() {
+    submitForm(event) {
+      event.preventDefault();
       console.log("Form data: ", this.form);
     },
   },
