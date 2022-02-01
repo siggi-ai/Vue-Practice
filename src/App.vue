@@ -12,7 +12,7 @@
       <button>Daten übermitteln</button>
     </form>
     <h2>Ausgangsbereich</h2>
-    <div>{{ key }}: {{ item }}</div>
+    <div v-for="(item, key, index) in form" :key="index">{{ key }}: {{ item }}</div>
   </div>
 </template>
 
