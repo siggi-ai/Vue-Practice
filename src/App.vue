@@ -206,6 +206,11 @@ export default {
       },
     };
   },
+  methods: {
+    submitForm() {
+      console.log("Form data: ", this.form);
+    },
+  },
 };
 </script>
 
