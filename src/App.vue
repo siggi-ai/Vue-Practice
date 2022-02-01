@@ -1,195 +1,17 @@
 <template>
-  <div class="main">
+  <div>
+    <h1>Modifiers</h1>
     <h2>Eingabebereich</h2>
     <form v-on:submit="submitForm">
       <div>
-        <h1>Form Handling</h1>
-        <label class="label" for="firstName">
-          <span class="label-text">Vorname</span>
-        </label>
-        <br />
-        <input
-          type="text"
-          id="firstname"
-          v-model.trim="form.firstName"
-          placeholder="Vorname"
-          class="input input-bordered"
-        />
         <div>
-          <br />
-          <label class="label" for="lastName">
-            <span class="label-text">Nachname</span>
+          <label for="age">
+            <span>Alter in Jahren</span>
           </label>
-          <br />
-          <input
-            type="text"
-            id="lastname"
-            v-model="form.lastName"
-            placeholder="Nachname"
-            class="input input-bordered"
-          />
-        </div>
-        <div>
-          <br />
-          <label class="label" for="hobbies">
-            <span class="label-text">Hobbys</span>
-          </label>
-          <br />
-          <textarea
-            id="hobbies"
-            v-model="form.hobbies"
-            placeholder="Deine Hobbys"
-            class="input input-bordered"
-          />
-        </div>
-        <div>
-          <br />
-          <label class="label" for="color">
-            <span class="label-text">Lieblingsfarbe</span>
-          </label>
-          <br />
-          <select
-            id="color"
-            class="select select-bordered w-full"
-            v-model="form.color"
-          >
-            <option value="">Wähle Deine Lieblingsfarbe</option>
-            <option value="blue">blau</option>
-            <option value="red">rot</option>
-            <option value="green">grün</option>
-          </select>
-        </div>
-        <div>
-          <br />
-          <label class="label" for="favoriteArtists">
-            <span class="label-text">Lieblingskünstler</span>
-          </label>
-          <br />
-          <select
-            id="color"
-            class="select select-bordered w-full"
-            v-model="form.favoriteArtists"
-            multiple
-          >
-            <option value="">Wähle Deine Lieblingskünstler</option>
-            <option value="Kahlo">Kahlo</option>
-            <option value="Picasso">Picasso</option>
-            <option value="Chagall">Chagall</option>
-          </select>
-        </div>
-        <div>
-          <br />
-          <label class="label" for="favoriteArtists">
-            <input
-              type="checkbox"
-              id="picture"
-              v-model="form.pictureOfTheMonth"
-              true-value="ja"
-              false-value="nein"
-              class="checkbox"
-            />
-            <span class="label-text"
-              >Hast Du schonmal das Bild des Monats produziert?</span
-            >
-            <br />
-          </label>
-        </div>
-        <div>
-          <br />
-          <label class="label" for="typeArtists">
-            <input
-              type="checkbox"
-              id="painter"
-              v-model="form.type"
-              value="painter"
-              class="checkbox"
-            />
-            <span class="label-text">painter</span>
-            <br />
-          </label>
-        </div>
-        <div>
-          <br />
-          <label class="label" for="typeArtists">
-            <input
-              type="checkbox"
-              id="sculptor"
-              v-model="form.type"
-              value="sculptor"
-              class="checkbox"
-            />
-            <span class="label-text">sculptor</span>
-            <br />
-          </label>
-        </div>
-        <div>
-          <br />
-          <label class="label" for="typeArtists">
-            <input
-              type="checkbox"
-              id="dancer"
-              v-model="form.type"
-              value="dancer"
-              class="checkbox"
-            />
-            <span class="label-text">dancer</span>
-            <br />
-          </label>
-        </div>
-        <div>
-          <br />
-          <label class="label" for="active">
-            <input
-              type="radio"
-              id="years1-2"
-              v-model="form.yearsActive"
-              value="1 bis 2 Jahre"
-              class="radio"
-            />
-            <span class="label-text">1-2 Jahre</span>
-            <br />
-          </label>
-        </div>
-        <div>
-          <br />
-          <label class="label" for="active">
-            <input
-              type="radio"
-              id="years3-4"
-              v-model="form.yearsActive"
-              value="3 bis 4 Jahre"
-              class="radio"
-            />
-            <span class="label-text">3-4 Jahre</span>
-            <br />
-          </label>
-        </div>
-        <div>
-          <br />
-          <label class="label" for="active">
-            <input
-              type="radio"
-              id="years5"
-              v-model="form.yearsActive"
-              value="mehr als 4 Jahre"
-              class="radio"
-            />
-            <span class="label-text">mehr als 4 Jahre</span>
-            <br />
-          </label>
-        </div>
-        <br />
-        <div>
-          <button class="btn">Daten übermitteln</button>
+          <input type="text" id="age" v-model="form.age" />
         </div>
       </div>
     </form>
-    <h2>Ausgabebereich</h2>
-    <div>
-      <div v-for="(item, key, index) in form" :key="index">
-        {{ key }}: {{ item }}
-      </div>
-    </div>
   </div>
 </template>
 
@@ -199,14 +21,7 @@ export default {
   data() {
     return {
       form: {
-        firstName: "Kai",
-        lastName: "Tischler",
-        hobbies: "Fußball, Tor des Monats",
-        color: "blue",
-        favoriteArtists: ["Pablo Picasso"],
-        pictureOfTheMonth: false,
-        type: [],
-        yearsActive: "",
+        age: null,
       },
     };
   },
