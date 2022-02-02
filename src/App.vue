@@ -1,7 +1,9 @@
 <template>
   <div>
     <h1>v-once</h1>
-    <input type="text" id="firstName" v-model="form.firstName" />
+    <div v-once>
+      <input type="text" id="firstName" v-model="form.firstName" />
+    </div>
     <button v-on:click="form.firstName = 'Annalena'">Namen ändern</button>
   </div>
 </template>
