@@ -1,21 +1,8 @@
 <template>
   <div>
-    <h1>Modifiers</h1>
-    <h2>Eingabebereich</h2>
-    <form v-on:submit.prevent="submitForm">
-      <div>
-        <label for="age">
-          <span>Alter in Jahren</span>
-        </label>
-        <br />
-        <input type="text" id="age" v-model.number.lazy="form.age" />
-      </div>
-      <button>Daten übermitteln</button>
-    </form>
-    <h2>Ausgangsbereich</h2>
-    <div v-for="(item, key, index) in form" :key="index">
-      {{ key }}: {{ item }}
-    </div>
+    <h1>v-once</h1>
+    <input type="text" id="firstName" v-model="form.firstName" />
+    <button v-on:click="form.firstName = 'Annalena'">Namen ändern</button>
   </div>
 </template>
 
@@ -25,15 +12,9 @@ export default {
   data() {
     return {
       form: {
-        age: null,
+        firstName: "Angela",
       },
     };
-  },
-  methods: {
-    submitForm(event) {
-      event.preventDefault();
-      console.log("Form data: ", this.form);
-    },
   },
 };
 </script>
