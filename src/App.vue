@@ -2,7 +2,7 @@
   <div>
     <h1>Modifiers</h1>
     <h2>Eingabebereich</h2>
-    <form v-on:submit="submitForm">
+    <form v-on:submit.prevent="submitForm">
       <div>
         <label for="age">
           <span>Alter in Jahren</span>
