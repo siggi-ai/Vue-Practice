@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <h1>v-pre</h1>
-    <div v-pre>
-      {{ form.firstName }}
-    </div>
+  <div class="text">
+    <h1>Computed Properties</h1>
+    <div>{{ form.firstName }} {{ form.lastName }}</div>
   </div>
 </template>
 
@@ -14,6 +12,7 @@ export default {
     return {
       form: {
         firstName: "Angela",
+        lastName: "Merkel"
       },
     };
   },
@@ -21,8 +20,8 @@ export default {
 </script>
 
 <style scoped>
-body {
-  padding: 10px;
+.text {
+  padding: 50px;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 </style>
