@@ -63,6 +63,7 @@ export default {
   },
   methods: {
     getSumNumberOfMatches() {
+      console.log("methods getSumNumberOfMatches");
       return this.players.reduce(
         (total, current) => (total = total + current.numberOfMatches),
         0
@@ -71,6 +72,7 @@ export default {
   },
   computed: {
     sumNumberOfMatches() {
+      console.log("computed getSumNumberOfMatches");
       return this.players.reduce(
         (total, current) => (total = total + current.numberOfMatches),
         0
