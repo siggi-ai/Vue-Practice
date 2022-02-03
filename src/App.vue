@@ -18,9 +18,12 @@ export default {
   name: "App",
   data() {
     return {
-      form: {
-        firstName: "Angela",
-        lastName: "Merkel",
+      players: {
+        id: 1,
+        firstName: "Klaus",
+        lastName: "Fischer",
+        club: "FC Schalke 04",
+        numberOfMatches: 535,
       },
     };
   },
