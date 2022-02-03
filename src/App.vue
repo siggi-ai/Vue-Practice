@@ -18,19 +18,23 @@ export default {
   name: "App",
   data() {
     return {
-      players: {
-        id: 1,
-        firstName: "Klaus",
-        lastName: "Fischer",
-        club: "FC Schalke 04",
-        numberOfMatches: 535,
-      },
+      players: [
+        {
+          id: 1,
+          firstName: "Klaus",
+          lastName: "Fischer",
+          club: "FC Schalke 04",
+          numberOfMatches: 535,
+        },
+        {
+          id: 2,
+          firstName: "Norbert",
+          lastName: "Nigbur",
+          club: "FC Schalke 04",
+          numberOfMatches: 456,
+        },
+      ],
     };
-  },
-  computed: {
-    fullName() {
-      return `${this.form.firstName} ${this.form.lastName}`;
-    },
   },
 };
 </script>
