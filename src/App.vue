@@ -18,6 +18,10 @@
       Bundesligaspiele Summe:
       {{ sumNumberOfMatches }}
     </h4>
+    <h4>
+      Bundesligaspiele Summe (methods):
+      {{ getSumNumberOfMatches() }}
+    </h4>
   </div>
 </template>
 
@@ -50,6 +54,13 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    getSumNumberOfMatches() {
+      return this.players.reduce(
+        (total, current) => (total = total + current.numberOfMatches), 0
+      );
+    },
   },
   computed: {
     sumNumberOfMatches() {
