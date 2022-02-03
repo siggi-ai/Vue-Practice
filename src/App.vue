@@ -12,7 +12,7 @@ export default {
     return {
       form: {
         firstName: "Angela",
-        lastName: "Merkel"
+        lastName: "Merkel",
       },
     };
   },
