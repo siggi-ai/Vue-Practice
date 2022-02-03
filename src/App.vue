@@ -8,6 +8,7 @@
       </div>
       <br />
     </template>
+    <br />
     <button
       v-on:click="
         players.push({
