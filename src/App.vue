@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>v-once</h1>
+    <h1>v-pre</h1>
     <div v-once>
       <input type="text" id="firstName" v-model="form.firstName" />
     </div>
