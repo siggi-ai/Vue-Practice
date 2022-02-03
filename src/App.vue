@@ -1,6 +1,19 @@
 <template>
   <div class="text">
     <h1>Computed Properties</h1>
+    <button
+      v-on:click="
+        players.push({
+          id: 4,
+          firstName: 'Hannes',
+          lastName: 'Fischer',
+          club: 'FC Schalke 04',
+          numberOfMatches: 189,
+        })
+      "
+    >
+      Mit Hannes
+    </button>
     <h4>
       Bundesligaspiele Summe:
       {{ sumNumberOfMatches }}
@@ -41,7 +54,8 @@ export default {
   computed: {
     sumNumberOfMatches() {
       return this.players.reduce(
-        (total, current) => (total = total + current.numberOfMatches), 0
+        (total, current) => (total = total + current.numberOfMatches),
+        0
       );
     },
   },
