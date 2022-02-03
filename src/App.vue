@@ -3,12 +3,7 @@
     <h1>Computed Properties</h1>
     <h4>
       Bundesligaspiele Summe:
-      {{
-        players.reduce(
-          (total, current) => (total = total + current.numberofMatches),
-          0
-        )
-      }}
+      {{ sumNumberOfMatches }}
     </h4>
   </div>
 </template>
@@ -33,8 +28,22 @@ export default {
           club: "FC Schalke 04",
           numberOfMatches: 456,
         },
+        {
+          id: 3,
+          firstName: "Norbert",
+          lastName: "Fichtel",
+          club: "FC Schalke 04",
+          numberOfMatches: 552,
+        },
       ],
     };
+  },
+  computed: {
+    sumNumberOfMatches() {
+      return this.players.reduce(
+        (total, current) => (total = total + current.numberOfMatches)
+      );
+    },
   },
 };
 </script>
