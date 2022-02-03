@@ -1,6 +1,11 @@
 <template>
   <div class="text">
     <h1>Computed Properties</h1>
+    <template v-for="players in players" :key="players.id">
+      <div v-if="players.numberOfMatches > 500">
+        {{ players.firstName }} {{ players.lastName }} {{ players.club }}
+      </div>
+    </template>
     <button
       v-on:click="
         players.push({
