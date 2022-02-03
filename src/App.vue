@@ -1,8 +1,15 @@
 <template>
   <div class="text">
     <h1>Computed Properties</h1>
-    <div>{{ form.firstName }} {{ form.lastName }}</div>
-    <div>Name mit Computed Property: {{ fullName }}</div>
+    <h4>
+      Bundesligaspiele Summe:
+      {{
+        players.reduce(
+          (total, current) => (total = total + current.numberofMatches),
+          0
+        )
+      }}
+    </h4>
   </div>
 </template>
 
@@ -20,8 +27,8 @@ export default {
   computed: {
     fullName() {
       return `${this.form.firstName} ${this.form.lastName}`;
-    }
-  }
+    },
+  },
 };
 </script>
 
