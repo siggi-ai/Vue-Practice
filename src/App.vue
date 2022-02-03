@@ -41,7 +41,7 @@ export default {
   computed: {
     sumNumberOfMatches() {
       return this.players.reduce(
-        (total, current) => (total = total + current.numberOfMatches)
+        (total, current) => (total = total + current.numberOfMatches), 0
       );
     },
   },
