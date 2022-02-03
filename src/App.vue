@@ -2,6 +2,7 @@
   <div class="text">
     <h1>Computed Properties</h1>
     <div>{{ form.firstName }} {{ form.lastName }}</div>
+    <div>Name mit Computed Property: {{ fullName }}</div>
   </div>
 </template>
 
@@ -16,6 +17,11 @@ export default {
       },
     };
   },
+  computed: {
+    fullName() {
+      return `${this.form.firstName} ${this.form.lastName}`;
+    }
+  }
 };
 </script>
 
