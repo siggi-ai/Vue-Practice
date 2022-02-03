@@ -3,7 +3,8 @@
     <h1>Computed Properties</h1>
     <template v-for="players in players" :key="players.id">
       <div v-if="players.numberOfMatches > 500">
-        {{ players.firstName }} {{ players.lastName }} {{ players.club }}
+        {{ players.firstName }} {{ players.lastName }} {{ players.club }} hat
+        insgesamt
       </div>
     </template>
     <button
