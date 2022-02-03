@@ -22,6 +22,12 @@
       Bundesligaspiele Summe (methods):
       {{ getSumNumberOfMatches() }}
     </h4>
+    <div>
+      <label class="label">
+        <span class="label-text" for="color">Farbe</span>
+      </label>
+      <input type="text" id="color" v-model="color" class="input" />
+    </div>
   </div>
 </template>
 
@@ -58,7 +64,8 @@ export default {
   methods: {
     getSumNumberOfMatches() {
       return this.players.reduce(
-        (total, current) => (total = total + current.numberOfMatches), 0
+        (total, current) => (total = total + current.numberOfMatches),
+        0
       );
     },
   },
