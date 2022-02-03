@@ -36,6 +36,7 @@ export default {
   name: "App",
   data() {
     return {
+      color: "",
       players: [
         {
           id: 1,
@@ -72,7 +73,7 @@ export default {
   },
   computed: {
     sumNumberOfMatches() {
-      console.log("computed getSumNumberOfMatches");
+      console.log("computed sumNumberOfMatches");
       return this.players.reduce(
         (total, current) => (total = total + current.numberOfMatches),
         0
