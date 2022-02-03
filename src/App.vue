@@ -6,6 +6,7 @@
         {{ players.firstName }} {{ players.lastName }} {{ players.club }} hat
         insgesamt {{ players.numberOfMatches }} Bundesligaspiele absolviert.
       </div>
+      <br />
     </template>
     <button
       v-on:click="
