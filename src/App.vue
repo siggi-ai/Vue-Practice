@@ -4,7 +4,7 @@
     <template v-for="players in players" :key="players.id">
       <div v-if="players.numberOfMatches > 500">
         {{ players.firstName }} {{ players.lastName }} {{ players.club }} hat
-        insgesamt
+        insgesamt {{ players.numberOfMatches }} Bundesligaspiele absolviert.
       </div>
     </template>
     <button
