@@ -13,7 +13,7 @@
       v-on:click="
         players.push({
           id: 4,
-          firstName: 'Hannes',
+          firstName: 'Hans',
           lastName: 'Fischer',
           club: 'FC Schalke 04',
           numberOfMatches: 189,
