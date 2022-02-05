@@ -14,7 +14,7 @@
         players.push({
           id: 4,
           firstName: 'Hans',
-          lastName: 'Fischer',
+          lastName: 'Fisch',
           club: 'FC Schalke 04',
           numberOfMatches: 189,
         })
