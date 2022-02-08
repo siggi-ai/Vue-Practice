@@ -9,9 +9,15 @@ export default {
   name: "App",
   data() {
     return {
-      color: "",
+      firstName: "Kunibert",
+      lastName: "Winkelmann"
     };
   },
+  computed : {
+    fullName() {
+      return `${this.firstName} ${this.lastName}`;
+    }
+  }
 };
 </script>
 
