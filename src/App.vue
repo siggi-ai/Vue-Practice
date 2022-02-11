@@ -11,7 +11,7 @@ export default {
   data() {
     return {
       firstName: "Kunibert",
-      lastName: "Winkelmann der Erste",
+      lastName: "Winkelmann der Zweite",
     };
   },
   computed: {
