@@ -2,6 +2,10 @@
   <div class="main">
     <h1>computed properties</h1>
     <h2>{{ fullName }} {{ title }}</h2>
+    <h3>
+      There one was a person called {{ fullName }}, who was called
+      {{ title }} by everyone.
+    </h3>
   </div>
 </template>
 
