@@ -10,8 +10,8 @@ export default {
   name: "App",
   data() {
     return {
-      firstName: "Kunibert",
-      lastName: "Winkelmann",
+      firstName: "Cat",
+      lastName: "Power",
       title: "the Greatest",
     };
   },
