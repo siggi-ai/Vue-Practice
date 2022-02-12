@@ -4,7 +4,8 @@
     <h2>{{ fullName }} {{ title }}</h2>
     <h3>
       There once was a person called {{ fullName }}, who was called
-      {{ title }} by everyone. She lived in a great {{ home }}.
+      {{ title }} by everyone. She lived in a great {{ home }} and ate
+      a lot of {{ food }}.
     </h3>
   </div>
 </template>
@@ -18,6 +19,7 @@ export default {
       lastName: "Power",
       title: "the Greatest",
       home: "castle",
+      food: "pizza",
     };
   },
   computed: {
