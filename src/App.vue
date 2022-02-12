@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h1>computed properties</h1>
-    <h2>{{ fullName }}</h2>
+    <h2>{{ fullName }} {{ title }}</h2>
   </div>
 </template>
 
@@ -11,7 +11,8 @@ export default {
   data() {
     return {
       firstName: "Kunibert",
-      lastName: "Winkelmann der Zweite",
+      lastName: "Winkelmann",
+      title: "the Greatest",
     };
   },
   computed: {
