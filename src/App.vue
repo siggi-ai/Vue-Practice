@@ -3,10 +3,11 @@
     <h1>computed properties</h1>
     <h2>{{ fullName }} {{ title }}</h2>
     <h3>
-      There once was a person called {{ fullName }}, who was called
-      {{ title }} by everyone. She lived in a great {{ home }} and ate a lot of
-      {{ food }}. But in the woods next to her {{ home }}, there also lived an
-      evil {{ enemy }}.
+      There once was a person called
+      {{ fullName }}, who was called {{ title }} by everyone. She lived in a
+      great {{ home }} and ate a lot of {{ food }}. But in the woods next to her
+      {{ home }}, there also lived an evil {{ enemy }}. {{ firstName }} was
+      afraid, the {{ enemy }} could attack her.
     </h3>
   </div>
 </template>
