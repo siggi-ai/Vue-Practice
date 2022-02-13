@@ -11,7 +11,8 @@
       prepared a {{ powerFood }} and served it to his master.
       <br />
       One day, when the {{ enemy }} approached the {{ home }}, {{ firstName }}
-      looked out of the window and became afraid.
+      looked out of the window and became afraid. She immediatly ordered
+      {{ powerFood }} and ate it all at once.
     </h3>
   </div>
 </template>
