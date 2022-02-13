@@ -9,6 +9,9 @@
       {{ home }}, there also lived an evil {{ enemy }}. {{ firstName }} was
       afraid, the {{ enemy }} could attack her. Her cook had an idea. He 
       prepared a {{ powerFood }} and served it to his master.
+      <br />
+      One day, when the {{ enemy }} approached the {{ home }}, {{ firstName }}
+      looked 
     </h3>
   </div>
 </template>
