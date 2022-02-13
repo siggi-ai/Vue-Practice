@@ -7,7 +7,8 @@
       {{ fullName }}, who was called {{ title }} by everyone. She lived in a
       great {{ home }} and ate a lot of {{ food }}. But in the woods next to her
       {{ home }}, there also lived an evil {{ enemy }}. {{ firstName }} was
-      afraid, the {{ enemy }} could attack her.
+      afraid, the {{ enemy }} could attack her. Her cook had an idea. He 
+      prepared a {{ powerFood }} and served it to his master.
     </h3>
   </div>
 </template>
@@ -29,6 +30,9 @@ export default {
     fullName() {
       return `${this.firstName} ${this.lastName}`;
     },
+    powerFood() {
+      return `${this.enemy}${this.food}`
+    }
   },
 };
 </script>
