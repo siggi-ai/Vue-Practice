@@ -22,8 +22,8 @@ export default {
   name: "App",
   data() {
     return {
-      firstName: "Cat",
-      lastName: "Power",
+      firstName: "Clara",
+      lastName: "Fall",
       title: "the Greatest",
       home: "castle",
       food: "pizza",
