@@ -1,19 +1,10 @@
 <template>
   <div class="main">
     <h1>computed properties</h1>
-    <h2>{{ fullName }} {{ title }}</h2>
-    <h3>
-      There once was a person called
-      {{ fullName }}, who was called {{ title }} by everyone. She lived in a
-      great {{ home }} and ate a lot of {{ food }}. But in the woods next to her
-      {{ home }}, there also lived an evil {{ enemy }}. {{ firstName }} was
-      afraid, the {{ enemy }} could attack her. Her cook had an idea. He 
-      prepared a {{ powerFood }} and served it to his master.
-      <br />
-      One day, when the {{ enemy }} approached the {{ home }}, {{ firstName }}
-      looked out of the window and became afraid. She immediatly ordered
-      {{ powerFood }} and ate it all at once.
-    </h3>
+    <h2>{{ fullName }}</h2>
+  </div>
+  <div>
+    <button v-on:click="changeFullName">neuer Name</button>
   </div>
 </template>
 
@@ -24,11 +15,12 @@ export default {
     return {
       firstName: "Clara",
       lastName: "Fall",
-      title: "the Greatest",
-      home: "castle",
-      food: "pizza",
-      enemy: "dragon",
     };
+  },
+  methods: {
+    changeFullName() {
+      this.fullName = "Hansi Hinterseer";
+    },
   },
   computed: {
     fullName: {
@@ -39,11 +31,11 @@ export default {
         const names = value.split(" ");
         this.firstName = names[0];
         this.lastName = names[1];
-      }
+      },
     },
     powerFood() {
-      return `${this.enemy}${this.food}`
-    }
+      return `${this.enemy}${this.food}`;
+    },
   },
 };
 </script>
