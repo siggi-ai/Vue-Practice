@@ -31,8 +31,15 @@ export default {
     };
   },
   computed: {
-    fullName() {
-      return `${this.firstName} ${this.lastName}`;
+    fullName: {
+      get() {
+        return `${this.firstName} ${this.lastName}`;
+      },
+      set(value) {
+        const names = value.split(" ");
+        this.firstName = names[0];
+        this.lastName = names[1];
+      }
     },
     powerFood() {
       return `${this.enemy}${this.food}`
