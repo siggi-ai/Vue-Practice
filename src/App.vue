@@ -33,9 +33,6 @@ export default {
         this.lastName = names[1];
       },
     },
-    powerFood() {
-      return `${this.enemy}${this.food}`;
-    },
   },
 };
 </script>
