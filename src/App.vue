@@ -1,10 +1,7 @@
 <template>
   <div class="main">
     <h1>Watchers</h1>
-    <h2>{{ fullName }}</h2>
-  </div>
-  <div>
-    <button v-on:click="changeFullName">neuer Name</button>
+    <h2>Lautstärke</h2>
   </div>
 </template>
 
