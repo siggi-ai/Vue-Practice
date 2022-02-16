@@ -5,6 +5,8 @@
     <h3>
       <progress v-bind:value="volume" max="5"></progress>
     </h3>
+    <h4>{{ volume }}</h4>
+    <button></button>
   </div>
 </template>
 
