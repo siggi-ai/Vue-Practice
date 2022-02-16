@@ -1,6 +1,6 @@
 <template>
   <div class="main">
-    <h1>computed properties</h1>
+    <h1>Watchers</h1>
     <h2>{{ fullName }}</h2>
   </div>
   <div>
