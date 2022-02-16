@@ -7,7 +7,7 @@
     </h3>
     <h4>{{ volume }}</h4>
     <button v-on:click="volume -= 1">-</button>
-    <button v-on:click="volume += 1">-</button>
+    <button v-on:click="volume += 1">+</button>
   </div>
 </template>
 
