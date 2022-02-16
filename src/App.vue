@@ -19,23 +19,6 @@ export default {
       volume: 0,
     };
   },
-  methods: {
-    changeFullName() {
-      this.fullName = "Hansi Hinterseer";
-    },
-  },
-  computed: {
-    fullName: {
-      get() {
-        return `${this.firstName} ${this.lastName}`;
-      },
-      set(value) {
-        const names = value.split(" ");
-        this.firstName = names[0];
-        this.lastName = names[1];
-      },
-    },
-  },
 };
 </script>
 
