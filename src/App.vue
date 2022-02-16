@@ -6,7 +6,8 @@
       <progress v-bind:value="volume" max="5"></progress>
     </h3>
     <h4>{{ volume }}</h4>
-    <button></button>
+    <button v-on:click="volume -= 1">-</button>
+    <button v-on:click="volume += 1">-</button>
   </div>
 </template>
 
