@@ -16,8 +16,7 @@ export default {
   name: "App",
   data() {
     return {
-      firstName: "Clara",
-      lastName: "Fall",
+      volume: 0,
     };
   },
   methods: {
