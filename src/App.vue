@@ -2,6 +2,11 @@
   <div class="main">
     <h1>Watchers</h1>
     <h2>Lautstärke</h2>
+    <h3>
+      <progress>
+        
+      </progress>
+    </h3>
   </div>
 </template>
 
