@@ -22,7 +22,7 @@ export default {
   name: "App",
   data() {
     return {
-      radiosender: "Eins LIVE",
+      radiosender: "WDR1",
       senderInfo: {
         web: "https://www1.wdr.de/radio/1live/index.html",
         foundedOn: 1995,
