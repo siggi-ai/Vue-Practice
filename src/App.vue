@@ -12,7 +12,7 @@
     </div>
     <div>
       <span>gegründet am:</span>
-      <input type="text" v-model="senderInfo.web">
+      <input type="text" v-model="senderInfo.foundedOn">
     </div>
   </div>
 </template>
@@ -23,6 +23,10 @@ export default {
   data() {
     return {
       radiosender: "Eins LIVE",
+      senderInfo: {
+        web: "https://www1.wdr.de/radio/1live/index.html",
+        foundedOn: 1995,
+      }
     };
   },
   watch: {
