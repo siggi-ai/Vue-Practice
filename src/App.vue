@@ -1,13 +1,7 @@
 <template>
   <div class="main">
     <h1>Watchers</h1>
-    <h2>Lautstärke</h2>
-    <h3>
-      <progress v-bind:value="volume" max="5"></progress>
-    </h3>
-    <h4>{{ volume }}</h4>
-    <button v-on:click="volume -= 1">-</button>
-    <button v-on:click="volume += 1">+</button>
+    <h2>Immediate and Deep</h2>
   </div>
 </template>
 
@@ -15,23 +9,9 @@
 export default {
   name: "App",
   data() {
-    return {
-      volume: 0,
-    };
+    return {};
   },
-  watch: {
-    volume(newVolume, oldVolume) {
-      if (newVolume > oldVolume && oldVolume === 3) {
-        alert("Achtung! Diese Lautstärke gefährdet Ihre Gesundheit.");
-      }
-      if (newVolume < 0) {
-        this.volume = 0;
-      }
-      if (newVolume > 5) {
-        this.volume = 5;
-      }
-    },
-  },
+  watch: {},
 };
 </script>
 
