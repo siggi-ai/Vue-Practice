@@ -13,7 +13,9 @@
 export default {
   name: "App",
   data() {
-    return {};
+    return {
+      radiosender: "Eins LIVE",
+    };
   },
   watch: {},
 };
