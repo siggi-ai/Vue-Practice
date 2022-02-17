@@ -8,11 +8,11 @@
     </div>
     <div>
       <span>Webadresse:</span>
-      <input type="text" v-model="senderInfo.web">
+      <input type="text" v-model="senderInfo.web" />
     </div>
     <div>
       <span>gegründet am:</span>
-      <input type="text" v-model="senderInfo.foundedOn">
+      <input type="text" v-model="senderInfo.foundedOn" />
     </div>
   </div>
 </template>
@@ -26,7 +26,7 @@ export default {
       senderInfo: {
         web: "https://www1.wdr.de/radio/1live/index.html",
         foundedOn: 1995,
-      }
+      },
     };
   },
   watch: {
@@ -35,6 +35,14 @@ export default {
         console.log(`Aufruf der API mit dem neuen Radiosender: ${newSender}`);
       },
       immediate: true,
+    },
+    senderInfo: {
+      handler(newInfos) {
+        console.log(
+          `Aufruf der API mit web "${newInfos.web}" und gegründet am "${newInfos.foundedOn}`
+        );
+      },
+      deep: true,
     },
   },
 };
