@@ -20,7 +20,9 @@ export default {
     };
   },
   watch: {
-    
+    volume(newVolume) {
+      
+    }
   }
 };
 </script>
