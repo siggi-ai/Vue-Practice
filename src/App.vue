@@ -4,7 +4,7 @@
     <h2>Immediate and Deep</h2>
     <div>
       <span>Radiosender</span>
-      <input type="text" v-model="radiosender">
+      <input type="text" v-model="radiosender" />
     </div>
   </div>
 </template>
@@ -18,9 +18,12 @@ export default {
     };
   },
   watch: {
-    radiosender(newSender) {
-      console.log(`Aufruf der API mit dem neuen Radiosender: ${newSender}`)
-    }
+    radiosender: {
+      handler(newSender) {
+        console.log(`Aufruf der API mit dem neuen Radiosender: ${newSender}`);
+      },
+      immediate: true
+    },
   },
 };
 </script>
