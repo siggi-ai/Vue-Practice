@@ -21,7 +21,7 @@ export default {
   },
   watch: {
     volume(newVolume, oldVolume) {
-      if (newVolume === 4) {
+      if (newVolume > oldVolume && oldVolume === 3) {
         alert("Achtung! Diese Lautstärke gefährdet Ihre Gesundheit.")
       }
     }
