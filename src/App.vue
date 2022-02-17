@@ -25,7 +25,7 @@ export default {
       radiosender: "WDR1",
       senderInfo: {
         web: "https://www1.wdr.de/radio/1live/index.html",
-        foundedOn: 1995,
+        foundedOn: 1998,
       },
     };
   },
