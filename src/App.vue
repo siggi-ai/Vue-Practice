@@ -8,6 +8,11 @@
     </div>
     <div>
       <span>Webadresse:</span>
+      <input type="text" v-model="senderInfo.web">
+    </div>
+    <div>
+      <span>gegründet am:</span>
+      <input type="text" v-model="senderInfo.web">
     </div>
   </div>
 </template>
