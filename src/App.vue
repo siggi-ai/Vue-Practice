@@ -17,7 +17,11 @@ export default {
       radiosender: "Eins LIVE",
     };
   },
-  watch: {},
+  watch: {
+    radiosender(newSender) {
+      console.log(`Aufruf der API mit dem neuen Radiosender: ${newSender}`)
+    }
+  },
 };
 </script>
 
