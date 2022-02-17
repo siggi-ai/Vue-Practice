@@ -2,6 +2,10 @@
   <div class="main">
     <h1>Watchers</h1>
     <h2>Immediate and Deep</h2>
+    <div>
+      <span>Radiosender</span>
+      <input type="text" v-model="radiosender">
+    </div>
   </div>
 </template>
 
