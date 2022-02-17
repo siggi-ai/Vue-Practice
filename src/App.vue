@@ -20,7 +20,7 @@ export default {
     };
   },
   watch: {
-    volume(newVolume) {
+    volume(newVolume, oldVolume) {
       if (newVolume === 4) {
         alert("Achtung! Diese Lautstärke gefährdet Ihre Gesundheit.")
       }
