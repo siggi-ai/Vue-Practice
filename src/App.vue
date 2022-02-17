@@ -6,6 +6,9 @@
       <span>Radiosender</span>
       <input type="text" v-model="radiosender" />
     </div>
+    <div>
+      <span>Webadresse:</span>
+    </div>
   </div>
 </template>
 
@@ -22,7 +25,7 @@ export default {
       handler(newSender) {
         console.log(`Aufruf der API mit dem neuen Radiosender: ${newSender}`);
       },
-      immediate: true
+      immediate: true,
     },
   },
 };
