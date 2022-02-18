@@ -22,7 +22,7 @@ export default {
   name: "App",
   data() {
     return {
-      radiosender: "WDR1",
+      radiosender: "Delta Radio",
       senderInfo: {
         web: "https://www1.wdr.de/radio/1live/index.html",
         foundedOn: 1998,
