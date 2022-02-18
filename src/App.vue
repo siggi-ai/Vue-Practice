@@ -25,7 +25,7 @@ export default {
       radiosender: "Delta Radio",
       senderInfo: {
         web: "https://www1.wdr.de/radio/1live/index.html",
-        foundedOn: 1998,
+        foundedOn: 1993,
       },
     };
   },
