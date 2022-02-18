@@ -24,7 +24,7 @@ export default {
     return {
       radiosender: "Delta Radio",
       senderInfo: {
-        web: "https://www1.wdr.de/radio/1live/index.html",
+        web: "https://www.deltaradio.de/",
         foundedOn: 1993,
       },
     };
