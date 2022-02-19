@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Herzlich Willkommen!</h2>
+    <h2>Herzlich Willkommen {{ firstName }}!</h2>
   </div>
 </template>
 <script>
