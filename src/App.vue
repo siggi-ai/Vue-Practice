@@ -2,6 +2,8 @@
   <div class="main">
     <h1>first child</h1>
     <Willkommen />
+    <Willkommen />
+    <Willkommen />
   </div>
 </template>
 
