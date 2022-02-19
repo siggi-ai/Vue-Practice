@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import Willkommen from '.components/Willkommen.vue';
+import Willkommen from './components/Willkommen.vue';
 export default {
   name: "App",
   components: {
-    Hallo: Willkommen,
+    Hallo: Willkommen
   }
 };
 </script>
