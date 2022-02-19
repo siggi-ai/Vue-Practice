@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <h1>first child</h1>
-    <Hallo first-name="Klaus" />
+    <Hallo first-name="Niko" />
   </div>
 </template>
 
