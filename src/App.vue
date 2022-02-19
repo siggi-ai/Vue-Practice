@@ -1,17 +1,17 @@
 <template>
   <div class="main">
     <h1>first child</h1>
-    <Hallo />
+    <Willkommen />
   </div>
 </template>
 
 <script>
-import Willkommen from './components/Willkommen.vue';
+import Willkommen from "./components/Willkommen.vue";
 export default {
   name: "App",
   components: {
-    Hallo: Willkommen
-  }
+    Willkommen,
+  },
 };
 </script>
 
