@@ -18,6 +18,6 @@ h2 {
   color: #0032a1;
 }
 .name {
-  color: lightcoral;
+  color: #36ffff;
 }
 </style>
