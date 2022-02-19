@@ -2,6 +2,7 @@
   <div class="main">
     <h1>first child</h1>
     <Hallo first-name="Niko" />
+    <img src="face.jpg" alt="face" width="100">
   </div>
 </template>
 
