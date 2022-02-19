@@ -1,12 +1,17 @@
 <template>
   <div class="main">
     <h1>first child</h1>
+    <Hallo />
   </div>
 </template>
 
 <script>
+import Willkommen from '.components/Willkommen.vue';
 export default {
   name: "App",
+  components: {
+    Hallo: Willkommen,
+  }
 };
 </script>
 
