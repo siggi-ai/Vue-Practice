@@ -1,9 +1,7 @@
 <template>
   <div class="main">
     <h1>first child</h1>
-    <Willkommen />
-    <Willkommen />
-    <Willkommen />
+    <Hallo first-name="Klaus" />
   </div>
 </template>
 
@@ -12,7 +10,7 @@ import Willkommen from "./components/Willkommen.vue";
 export default {
   name: "App",
   components: {
-    Willkommen,
+    Hallo: Willkommen,
   },
 };
 </script>
