@@ -1,8 +1,11 @@
 <template>
   <div class="main">
-    <h1>first child</h1>
-    <Hallo first-name="Niko" />
-    <img src="face.jpg" alt="face" width="100">
+    <div>
+      <h1>first child</h1>
+      <Hallo first-name="Niko" />
+    </div>
+
+    <div class="pic"><img src="face.jpg" alt="face" width="100"/></div>
   </div>
 </template>
 
@@ -19,6 +22,7 @@ export default {
 <style>
 body {
   background-color: rgb(115, 115, 226);
+  display: flex;
 }
 
 .main {
@@ -27,4 +31,6 @@ body {
   color: white;
   background-color: rgb(150 150 240);
 }
+
+
 </style>
