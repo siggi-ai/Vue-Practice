@@ -15,9 +15,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+body {
+  background-color: rgb(115, 115, 226);
+}
+
 .main {
-  padding: 50px;
+  padding: 100px;
   font-family: Georgia, "Times New Roman", Times, serif;
   color: white;
   background-color: rgb(115, 115, 226);
