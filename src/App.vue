@@ -5,16 +5,20 @@
       <Hallo v-bind:first-name="userName" />
     </div>
 
+    <Spielbericht />
+
     <div class="pic"><img src="face.jpg" alt="face" width="100" /></div>
   </div>
 </template>
 
 <script>
 import Willkommen from "./components/Willkommen.vue";
+import Spielbericht from "./components/Spielbericht.vue";
 export default {
   name: "App",
   components: {
     Hallo: Willkommen,
+    Spielbericht
   },
   data() {
     return {
