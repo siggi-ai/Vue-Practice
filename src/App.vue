@@ -2,7 +2,7 @@
   <div class="main">
     <div>
       <h1>first child</h1>
-      <Hallo first-name="Niko" />
+      <Hallo v-bind:first-name="userName" />
     </div>
 
     <div class="pic"><img src="face.jpg" alt="face" width="100"/></div>
