@@ -8,14 +8,14 @@
 export default {
     name: "Spielbericht",
     props: {
-        homeTeam {
+        homeTeam: {
             type: String,
             required: true,
         },
-        guestTeam {
+        guestTeam: {
             type: String,
             required: true
         },
     };
-}
+};
 </script>
