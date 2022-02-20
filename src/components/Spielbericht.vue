@@ -3,6 +3,7 @@
     <div>
     <h2>Spielbericht</h2>
     <h3>{{ homeTeam }} gegen {{ guestTeam }}</h3>
+    <h4>Zuschauer: {{ spectators }}</h4>
     </div>
     <div>
     <h2>Wurde dieser Spielbericht veröffentlicht?</h2>
@@ -22,6 +23,7 @@ export default {
             type: String,
             required: true
         },
+        
     };
 };
 </script>
