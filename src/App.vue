@@ -37,6 +37,7 @@ export default {
 body {
   background-color: rgb(115, 115, 226);
   display: flex;
+  text-align: center;
 }
 
 .main {
