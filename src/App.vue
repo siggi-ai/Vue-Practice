@@ -5,7 +5,7 @@
       <Hallo v-bind:first-name="userName" />
     </div>
 
-    <div class="pic"><img src="face.jpg" alt="face" width="100"/></div>
+    <div class="pic"><img src="face.jpg" alt="face" width="100" /></div>
   </div>
 </template>
 
@@ -16,11 +16,11 @@ export default {
   components: {
     Hallo: Willkommen,
   },
-  data () {
+  data() {
     return {
       userName: "Hannes",
-    }
-  }
+    };
+  },
 };
 </script>
 
@@ -36,6 +36,4 @@ body {
   color: white;
   background-color: rgb(150 150 240);
 }
-
-
 </style>
