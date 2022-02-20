@@ -8,7 +8,7 @@
     <Spielbericht
       home-team="FC Schalke 04"
       guest-team="Borussia Dortmund"
-      spectators="70000"
+      spectators="70 000"
       is-published="true"
     />
 
