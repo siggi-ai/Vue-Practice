@@ -1,7 +1,7 @@
 <template>
   <div class="main">
     <div>
-      <h1>first child</h1>
+      <h1>Prop Types and Validations</h1>
       <Hallo v-bind:first-name="userName" />
     </div>
 
