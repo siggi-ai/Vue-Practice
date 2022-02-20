@@ -5,7 +5,12 @@
       <Hallo v-bind:first-name="userName" />
     </div>
 
-    <Spielbericht />
+    <Spielbericht
+      home-team="FC Schalke 04"
+      guest-team="Borussia Dortmund"
+      spectators="70000"
+      is-published="true"
+    />
 
     <div class="pic"><img src="face.jpg" alt="face" width="100" /></div>
   </div>
@@ -18,7 +23,7 @@ export default {
   name: "App",
   components: {
     Hallo: Willkommen,
-    Spielbericht
+    Spielbericht,
   },
   data() {
     return {
