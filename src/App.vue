@@ -46,4 +46,9 @@ body {
   color: white;
   background-color: rgb(150 150 240);
 }
+
+.pic {
+  display: flex;
+  float: right;
+}
 </style>
