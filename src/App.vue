@@ -16,6 +16,11 @@ export default {
   components: {
     Hallo: Willkommen,
   },
+  data () {
+    return {
+      userName: "Anna",
+    }
+  }
 };
 </script>
 
