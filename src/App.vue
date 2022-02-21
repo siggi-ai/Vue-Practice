@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import Spielbericht from "./components/Inject.vue";
+import Inject from "./components/Inject.vue";
 export default {
   name: "App",
   components: {
-    Spielbericht,
+    Inject,
   },
   data() {
     return {};
