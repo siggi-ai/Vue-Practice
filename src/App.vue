@@ -9,7 +9,7 @@
       home-team="FC Schalke 04"
       guest-team="Borussia Dortmund"
       v-bind:spectators="70000"
-      is-published="true"
+      v-bind:is-published="true"
     />
 
     <div class="pic"><img src="face.jpg" alt="face" width="100" /></div>
