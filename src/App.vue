@@ -2,33 +2,21 @@
   <div class="main">
     <div>
       <h1>Prop Types and Validations</h1>
-      <Hallo v-bind:first-name="userName" />
     </div>
 
-    <Spielbericht id="1904"
-      home-team="FC Schalke 04"
-      guest-team="Borussia Dortmund"
-      v-bind:spectators="70000"
-      v-bind:is-published="true"
-    />
-
-    <div class="pic"><img src="face.jpg" alt="face" width="100" /></div>
+    <Spielbericht id="1904" />
   </div>
 </template>
 
 <script>
-import Willkommen from "./components/Willkommen.vue";
 import Spielbericht from "./components/Spielbericht.vue";
 export default {
   name: "App",
   components: {
-    Hallo: Willkommen,
     Spielbericht,
   },
   data() {
-    return {
-      userName: "Hannes",
-    };
+    return {};
   },
 };
 </script>
