@@ -15,8 +15,8 @@ export default {
   components: {
     Inject,
   },
-  data() {
-    return {};
+  provide: {
+    userName: "Hubert Fichte",
   },
 };
 </script>
