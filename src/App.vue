@@ -5,7 +5,7 @@
       <Hallo v-bind:first-name="userName" />
     </div>
 
-    <Spielbericht
+    <Spielbericht id="1904"
       home-team="FC Schalke 04"
       guest-team="Borussia Dortmund"
       v-bind:spectators="70000"
