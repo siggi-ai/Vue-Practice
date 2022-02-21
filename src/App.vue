@@ -1,15 +1,15 @@
 <template>
   <div class="main">
     <div>
-      <h1>Prop Types and Validations</h1>
+      <h1>Provide and Inject</h1>
     </div>
 
-    <Spielbericht id="1904" />
+    <Inject />
   </div>
 </template>
 
 <script>
-import Spielbericht from "./components/Spielbericht.vue";
+import Spielbericht from "./components/Inject.vue";
 export default {
   name: "App",
   components: {
