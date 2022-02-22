@@ -4,25 +4,21 @@
       <h1>Custom Component Events</h1>
     </div>
 
-   <button v-on:click="isInvisible = true">popup öffnen</button>
+    <button v-on:click="isInvisible = true">popup öffnen</button>
+    <Popup v-show="isInvisible" />
   </div>
 </template>
 
 <script>
-import Inject from "./components/Inject.vue";
+import Popup from "./components/Popup.vue";
 export default {
   name: "App",
   components: {
-    Inject,
+    Popup,
   },
   data() {
     return {
-      name: "Hubert Fichte",
-    };
-  },
-  provide() {
-    return {
-      userName: this.name,
+      isInvisivle: false,
     };
   },
 };
