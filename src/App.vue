@@ -5,11 +5,14 @@
     </div>
 
     <button v-on:click="isInvisible = !isInvisible">
-      popup öffnen / schließen
+      <p>
+        öffnen <br />
+        schließen
+      </p>
     </button>
     <br />
     <br />
-    <button onclick="alert('Thank you!')">be polite</button> 
+    <button onclick="alert('Thank you!')">be polite</button>
     <Popup v-show="isInvisible" />
   </div>
 </template>
