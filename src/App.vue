@@ -5,7 +5,7 @@
     </div>
 
     <Inject />
-    <div>App.vue: {{ userName }}</div>
+    <div>App.vue: {{ name }}</div>
   </div>
 </template>
 
@@ -16,8 +16,15 @@ export default {
   components: {
     Inject,
   },
-  provide: {
-    userName: "Hubert Fichte",
+  data() {
+    return {
+      name: "Hubert Fichte",
+    };
+  },
+  provide() {
+    return {
+      userName: this.name,
+    };
   },
 };
 </script>
