@@ -4,7 +4,9 @@
       <h1>Custom Component Events</h1>
     </div>
 
-    <button v-on:click="isInvisible = true">popup öffnen</button>
+    <button v-on:click="isInvisible = !isInvisible">
+      popup öffnen / schließen
+    </button>
     <Popup v-show="isInvisible" />
   </div>
 </template>
