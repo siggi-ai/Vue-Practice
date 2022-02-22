@@ -5,6 +5,7 @@
     </div>
 
     <Inject />
+    <div>App.vue: {{ userName }}</div>
   </div>
 </template>
 
