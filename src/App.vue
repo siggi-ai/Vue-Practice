@@ -1,11 +1,10 @@
 <template>
   <div class="main">
     <div>
-      <h1>Provide and Inject</h1>
+      <h1>Custom Component Events</h1>
     </div>
 
-    <Inject />
-    <div>App.vue: {{ name }}</div>
+   <button v-on:click="isInvisible = true">popup öffnen</button>
   </div>
 </template>
 
