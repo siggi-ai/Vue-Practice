@@ -7,6 +7,9 @@
     <button v-on:click="isInvisible = !isInvisible">
       popup öffnen / schließen
     </button>
+    <br />
+    <br />
+    <button onclick="alert('Thank you!')">be polite</button> 
     <Popup v-show="isInvisible" />
   </div>
 </template>
