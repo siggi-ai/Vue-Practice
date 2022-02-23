@@ -8,5 +8,6 @@
 <script>
 export default {
   name: "Popup,",
+  emits: ["close"],
 };
 </script>
