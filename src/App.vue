@@ -4,10 +4,7 @@
       <h1>Custom Component Events</h1>
     </div>
 
-    <button
-      v-on:click="isInvisible = !isInvisible"
-      v-on:close="isVisible = false"
-    >
+    <button v-on:click="isVisible = !isVisible">
       <p>
         öffnen <br />
         schließen
@@ -16,7 +13,7 @@
     <br />
     <br />
     <button onclick="alert('Thank you!')">be polite</button>
-    <Popup v-show="isInvisible" />
+    <Popup v-show="isVisible" v-on:close="isVisible = false"/>
   </div>
 </template>
 
@@ -29,7 +26,7 @@ export default {
   },
   data() {
     return {
-      isInvisible: false,
+      isVisible: false,
     };
   },
 };
