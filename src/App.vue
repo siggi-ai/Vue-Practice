@@ -4,7 +4,10 @@
       <h1>Custom Component Events</h1>
     </div>
 
-    <button v-on:click="isInvisible = !isInvisible">
+    <button
+      v-on:click="isInvisible = !isInvisible"
+      v-on:close="isVisible = false"
+    >
       <p>
         öffnen <br />
         schließen
