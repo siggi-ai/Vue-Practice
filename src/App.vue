@@ -3,16 +3,7 @@
     <div>
       <h1>Custom Component Events</h1>
     </div>
-
-    <button v-on:click="isVisible = !isVisible">
-      <p>
-        öffnen <br />
-        schließen
-      </p>
-    </button>
-    <br />
-    <br />
-    <button onclick="alert('Thank you!')">be polite</button>
+    <button v-on:click="isVisible = true">Popup öffnen</button>
     <Popup v-show="isVisible" v-on:close="closePopup" />
   </div>
 </template>
