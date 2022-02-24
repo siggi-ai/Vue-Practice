@@ -13,7 +13,7 @@
     <br />
     <br />
     <button onclick="alert('Thank you!')">be polite</button>
-    <Popup v-show="isVisible" v-on:close="isVisible = false"/>
+    <Popup v-show="isVisible" v-on:close="closePopup" />
   </div>
 </template>
 
@@ -28,6 +28,12 @@ export default {
     return {
       isVisible: false,
     };
+  },
+  methods: {
+    closePopup(name) {
+      this.isVisible = false;
+      console.log("name is: ", name);
+    },
   },
 };
 </script>
