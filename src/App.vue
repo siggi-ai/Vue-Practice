@@ -1,7 +1,8 @@
 <template>
   <div class="main">
     <div>
-      <h1>Custom Component Events</h1>
+      <h1>Components and v-model</h1>
+      <h2>Hello {{ name }}</h2>
     </div>
     <button v-on:click="isVisible = true">Popup öffnen</button>
     <Popup v-show="isVisible" v-on:close="closePopup" />
