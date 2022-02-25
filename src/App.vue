@@ -13,6 +13,11 @@ export default {
   components: {
     Input,
   },
+  data() {
+    return {
+      name: "",
+    };
+  },
 };
 </script>
 
