@@ -1,31 +1,17 @@
 <template>
   <div class="main">
-    <div>
-      <h1>Components and v-model</h1>
-      <h2>Hello {{ name }}</h2>
-    </div>
-    <button v-on:click="isVisible = true">Popup öffnen</button>
-    <Popup v-show="isVisible" v-on:close="closePopup" />
+    <h1>Components and v-model</h1>
+    <Input v-model="name" />
+    <div>eigegeben wurde {{ name }}</div>
   </div>
 </template>
 
 <script>
-import Popup from "./components/Popup.vue";
+import Input from "./components/Input.vue";
 export default {
   name: "App",
   components: {
-    Popup,
-  },
-  data() {
-    return {
-      isVisible: false,
-    };
-  },
-  methods: {
-    closePopup(name) {
-      this.isVisible = false;
-      console.log("name is: ", name);
-    },
+    Input,
   },
 };
 </script>
