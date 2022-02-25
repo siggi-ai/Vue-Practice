@@ -3,7 +3,7 @@
     <input
       type="text"
       v-bind:value="modelValue"
-      @input="$emit('update:modelValue', '$event.target.value')"
+      @input="$emit('update:modelValue', $event.target.value)"
     />
   </div>
 </template>
