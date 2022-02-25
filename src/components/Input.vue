@@ -1,10 +1,17 @@
 <template>
   <div>
-    <input type="text" />
+    <input
+      type="text"
+      v-bind:value="modelValue"
+      @input="$emit('update:modelValue', '$event.target.value')"
+    />
   </div>
 </template>
 <script>
 export default {
   name: "Input",
+  props: {
+    modelValue: String,
+  },
 };
 </script>
