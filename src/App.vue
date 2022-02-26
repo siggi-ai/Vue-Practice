@@ -1,17 +1,17 @@
 <template>
   <div class="main">
     <h1>Components and v-model</h1>
-    <Input v-model="name" />
+    <Card />
     <div>eigegeben wurde {{ name }}</div>
   </div>
 </template>
 
 <script>
-import Input from "./components/Input.vue";
+import Card from "./components/Card.vue";
 export default {
   name: "App",
   components: {
-    Input,
+    Card,
   },
   data() {
     return {
