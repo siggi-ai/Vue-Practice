@@ -2,9 +2,9 @@
   <div>
     <div>{{ title }}</div>
     <div>{{ body }}</div>
-    <div>
-      <a>Mitglied werden</a>
-      <a>zur website</a>
+    <div v-if="actionOn">
+      <a v-bind:href="memberLink" target="_blank">Mitglied werden</a>
+      <a v-bind:href="webLink" target="_blank">zur website</a>
     </div>
   </div>
 </template>
