@@ -2,6 +2,7 @@
   <div class="main">
     <h1>Slots</h1>
     <Card
+      class="card"
       title="Schalke 04"
       body="Fußballverein"
       :action-on="true"
@@ -9,6 +10,7 @@
       web-link="https://schalke04.de/"
     />
     <Card
+      class="card"
       title="BVB 09"
       body="Fußballverein"
       :action-on="true"
@@ -29,6 +31,10 @@ export default {
 </script>
 
 <style>
+.card {
+  padding: 10px;
+  border: 1px solid white;
+}
 body {
   background-color: rgb(115, 115, 226);
   display: flex;

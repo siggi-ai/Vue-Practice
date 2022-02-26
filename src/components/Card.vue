@@ -26,8 +26,13 @@ export default {
       type: String,
     },
     webLink: {
-      type: String,  
-    }
+      type: String,
+    },
   },
 };
 </script>
+<style>
+a {
+  padding: 10px;
+}
+</style>
