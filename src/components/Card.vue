@@ -18,6 +18,16 @@ export default {
     body: {
       type: String,
     },
+    actionOn: {
+      type: Boolean,
+      default: false,
+    },
+    memberLink: {
+      type: String,
+    },
+    webLink: {
+      type: String,  
+    }
   },
 };
 </script>

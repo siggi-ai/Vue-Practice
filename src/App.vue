@@ -8,6 +8,13 @@
       member-link="https://schalke04.de/"
       web-link="https://schalke04.de/"
     />
+    <Card
+      title="BVB 09"
+      body="Fußballverein"
+      :action-on="true"
+      member-link="https://www.bvb.de/"
+      web-link="https://www.bvb.de/"
+    />
   </div>
 </template>
 
