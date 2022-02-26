@@ -1,8 +1,13 @@
 <template>
   <div class="main">
-    <h1>Components and v-model</h1>
-    <Card />
-    <div>eigegeben wurde {{ name }}</div>
+    <h1>Slots</h1>
+    <Card
+      title="Schalke 04"
+      body="Fußballverein"
+      :action-on="true"
+      member-link="https://schalke04.de/"
+      web-link="https://schalke04.de/"
+    />
   </div>
 </template>
 
@@ -12,11 +17,6 @@ export default {
   name: "App",
   components: {
     Card,
-  },
-  data() {
-    return {
-      name: "",
-    };
   },
 };
 </script>
