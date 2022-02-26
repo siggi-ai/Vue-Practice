@@ -3,19 +3,19 @@
     <h1>Slots</h1>
     <Card
       class="card"
-      title="Schalke 04"
+      title="HSV"
       body="Fußballverein"
       :action-on="true"
-      member-link="https://schalke04.de/"
-      web-link="https://schalke04.de/"
+      member-link="https://www.hsv.de/uebersicht"
+      web-link="https://www.hsv.de/uebersicht"
     />
     <Card
       class="card"
-      title="BVB 09"
+      title="FC St. Pauli"
       body="Fußballverein"
       :action-on="true"
-      member-link="https://www.bvb.de/"
-      web-link="https://www.bvb.de/"
+      member-link="https://www.fcstpauli.com/"
+      web-link="https://www.fcstpauli.com/"
     />
   </div>
 </template>
