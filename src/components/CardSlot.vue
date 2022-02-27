@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>{{ title }}</div>
-    <div>{{ body }}</div>
+    <slot name="body"></slot>
     <br />
     <div>
       <slot></slot>
