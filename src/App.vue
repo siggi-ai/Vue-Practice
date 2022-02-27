@@ -1,21 +1,27 @@
 <template>
   <div class="main">
-    <h1>Slots</h1>
-    <CardSlot title="HSV" body="Fußballverein">
-      <a class="card" href="https://www.hsv.de/uebersicht" target="_blank"
-        >Mitglied werden</a
-      >
-      <a class="card" href="https://www.hsv.de/uebersicht" target="_blank"
-        >zur website</a
-      >
+    <h1>Slots</h1> 
+    <CardSlot title="HSV">
+      <template v-slot:body>Fußballvere</template>
+      <template v-slot:default>
+        <a class="card" href="https://www.hsv.de/uebersicht" target="_blank"
+          >Mitglied werden</a
+        >
+        <a class="card" href="https://www.hsv.de/uebersicht" target="_blank"
+          >zur website</a
+        >
+      </template>
     </CardSlot>
-    <CardSlot title="St Pauli" body="Fußballverein">
-      <a class="card" href="https://www.fcstpauli.com/en/" target="_blank"
-        >Mitglied werden</a
-      >
-      <a class="card" href="https://www.fcstpauli.com/en/" target="_blank"
-        >zur website</a
-      >
+    <CardSlot title="St Pauli">
+      <template v-slot:body>Fußballvere</template>
+      <template v-slot:default>
+        <a class="card" href="https://www.fcstpauli.com/en/" target="_blank"
+          >Mitglied werden</a
+        >
+        <a class="card" href="https://www.fcstpauli.com/en/" target="_blank"
+          >zur website</a
+        >
+      </template>
     </CardSlot>
   </div>
 </template>
