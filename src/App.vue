@@ -13,7 +13,6 @@
       <a class="card" href="https://www.fcstpauli.com/en/" target="_blank"
         >Mitglied werden</a
       >
-
       <a class="card" href="https://www.fcstpauli.com/en/" target="_blank"
         >zur website</a
       >
