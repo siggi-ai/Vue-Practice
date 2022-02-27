@@ -1,31 +1,32 @@
 <template>
   <div class="main">
     <h1>Slots</h1>
-    <Card
-      class="card"
-      title="HSV"
-      body="Fußballverein"
-      :action-on="true"
-      member-link="https://www.hsv.de/uebersicht"
-      web-link="https://www.hsv.de/uebersicht"
-    />
-    <Card
-      class="card"
-      title="FC St. Pauli"
-      body="Fußballverein"
-      :action-on="true"
-      member-link="https://www.fcstpauli.com/"
-      web-link="https://www.fcstpauli.com/"
-    />
+    <CardSlot title="HSV" body="Fußballverein">
+      <a class="card" href="https://www.hsv.de/uebersicht" target="_blank"
+        >Mitglied werden</a
+      >
+      <a class="card" href="https://www.hsv.de/uebersicht" target="_blank"
+        >zur website</a
+      >
+    </CardSlot>
+    <CardSlot title="St Pauli" body="Fußballverein">
+      <a class="card" href="https://www.fcstpauli.com/en/" target="_blank"
+        >Mitglied werden</a
+      >
+
+      <a class="card" href="https://www.fcstpauli.com/en/" target="_blank"
+        >zur website</a
+      >
+    </CardSlot>
   </div>
 </template>
 
 <script>
-import Card from "./components/Card.vue";
+import CardSlot from "./components/CardSlot.vue";
 export default {
   name: "App",
   components: {
-    Card,
+    CardSlot,
   },
 };
 </script>
