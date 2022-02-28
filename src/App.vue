@@ -2,7 +2,7 @@
   <div class="main">
     <h1>Slots</h1> 
     <CardSlot title="HSV">
-      <template v-slot:body>Fußballverein</template>
+      <template v-slot:body>Verein</template>
       <template v-slot:default>
         <a class="card" href="https://www.hsv.de/uebersicht" target="_blank"
           >Mitglied werden</a
@@ -13,7 +13,7 @@
       </template>
     </CardSlot>
     <CardSlot title="St Pauli">
-      <template v-slot:body>Fußballverein</template>
+      <template v-slot:body>Verein</template>
       <template v-slot:default>
         <a class="card" href="https://www.fcstpauli.com/en/" target="_blank"
           >Mitglied werden</a
