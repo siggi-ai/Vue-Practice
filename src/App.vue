@@ -1,15 +1,18 @@
 <template>
   <div class="main">
     <h1>Slot Props</h1>
+    <div>
+      <PlayersList />
+    </div>
   </div>
 </template>
 
 <script>
-import CardSlot from "./components/CardSlot.vue";
+import PlayersList from "./components/PlayersList.vue";
 export default {
   name: "App",
   components: {
-    CardSlot,
+    PlayersList,
   },
 };
 </script>
