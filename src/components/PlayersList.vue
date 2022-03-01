@@ -1,5 +1,9 @@
 <template>
-  <div></div>
+  <div>
+    <h3 v-for="player in players" :key="player.lastName">
+      {{ player.firstName }} {{ player.lastName }} {{ player.age }}
+    </h3>
+  </div>
 </template>
 <script>
 export default {
