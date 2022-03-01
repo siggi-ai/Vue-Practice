@@ -10,7 +10,17 @@ export default {
         {
           firstName: "Klaus",
           lastName: "Fischer",
-          age: 21
+          age: 21,
+        },
+        {
+          firstName: "Klaus",
+          lastName: "Fichtel",
+          age: 22,
+        },
+        {
+          firstName: "Norbert",
+          lastName: "Nigur",
+          age: 22,
         },
       ],
     };
