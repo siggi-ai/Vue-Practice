@@ -1,7 +1,11 @@
 <template>
   <div>
     <h3 v-for="player in players" :key="player.lastName">
-      <slot></slot>
+      <slot
+        v-bind:firstName="player.firstName"
+        v-bind:lastName="player.lastName"
+        v-bind:age="player.age" 
+      ></slot>
     </h3>
   </div>
 </template>
