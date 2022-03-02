@@ -2,7 +2,13 @@
   <div class="main">
     <h1>Slot Props</h1>
     <div>
-      <PlayersList />
+      <PlayersList>
+        <template v-slot:default="slotProps">
+          {{ slotProps.firstName }} 
+          {{ slotProps.lastName }}
+          {{ slotProps.age }}
+        </template>
+      </PlayersList>
     </div>
   </div>
 </template>
