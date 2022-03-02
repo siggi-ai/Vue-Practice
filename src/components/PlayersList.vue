@@ -26,6 +26,11 @@ export default {
           lastName: "Nigur",
           age: 22,
         },
+        {
+          firstName: "Eggbert",
+          lastName: "Hahn",
+          age: 19,
+        },
       ],
     };
   },
