@@ -1,7 +1,7 @@
 <template>
   <div>
     <h3 v-for="player in players" :key="player.lastName">
-      {{ player.firstName }} {{ player.lastName }} ({{ player.age }})
+      <slot></slot>
     </h3>
   </div>
 </template>
