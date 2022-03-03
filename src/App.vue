@@ -3,11 +3,11 @@
     <h1>Slot Props</h1>
     <div>
       <PlayersList>
-        <template v-slot:default="slotProps">
-          {{ slotProps.firstName }} 
-          {{ slotProps.lastName }}
+        <template v-slot:default="allPlayers">
+          {{ allPlayers.player.firstName }}
+          {{ allPlayers.player.lastName }}
           <br />
-          Alter: {{ slotProps.age }}
+          Alter: {{ allPlayers.player.age }}
         </template>
       </PlayersList>
     </div>
