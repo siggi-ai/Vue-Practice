@@ -6,7 +6,8 @@
         <template v-slot:default="slotProps">
           {{ slotProps.firstName }} 
           {{ slotProps.lastName }}
-          {{ slotProps.age }}
+          <br />
+          Alter: {{ slotProps.age }}
         </template>
       </PlayersList>
     </div>
