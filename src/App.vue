@@ -58,6 +58,8 @@ body {
 }
 .main {
   margin-left: 0 auto;
+  padding: 30px;
+  font-size: 2rem;
 }
 h4 {
   color: orange;
