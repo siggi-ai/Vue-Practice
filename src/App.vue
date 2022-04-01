@@ -3,31 +3,31 @@
     <div class="main">
       <h1>Dynamic Component</h1>
       <button
-        v-on:click="tabActivate = 'TabA'"
+        v-on:click="tabActive = 'TabA'"
         class="tab"
-        v-bind:class="{ 'tab-activate': tabActive === 'TabA' }"
+        v-bind:class="{ 'tab-active': tabActive === 'TabA' }"
       >
         A
       </button>
       <button
-        v-on:click="tabActivate = 'TabB'"
+        v-on:click="tabActive = 'TabB'"
         class="tab"
-        v-bind:class="{ 'tab-activate': tabActive === 'TabB' }"
+        v-bind:class="{ 'tab-active': tabActive === 'TabB' }"
       >
         B
       </button>
       <button
-        v-on:click="tabActivate = 'TabC'"
+        v-on:click="tabActive = 'TabC'"
         class="tab"
-        v-bind:class="{ 'tab-activate': tabActive === 'TabC' }"
+        v-bind:class="{ 'tab-active': tabActive === 'TabC' }"
       >
         C
       </button>
     </div>
     <div>
-      <TabA v-if="tabActivate === 'TabA'" />
-      <TabB v-if="tabActivate === 'TabB'" />
-      <TabC v-if="tabActivate === 'TabC'" />
+      <TabA v-if="tabActive === 'TabA'" />
+      <TabB v-if="tabActive === 'TabB'" />
+      <TabC v-if="tabActive === 'TabC'" />
     </div>
   </div>
 </template>
@@ -45,7 +45,7 @@ export default {
   },
   data() {
     return {
-      tabActivate: "TabA",
+      tabActive: "TabA",
     };
   },
 };
