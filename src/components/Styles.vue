@@ -13,4 +13,7 @@ body {
   background-color: rgb(115, 115, 226);
   text-align: center;
 }
+h4 {
+  color: rgb(145, 0, 0);
+}
 </style>
