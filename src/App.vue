@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h1>Component Styles</h1>
-    <h4>Title of App.vue</h4>
-    <Styles />
+    <div class="main">
+      <h1>Component Styles</h1>
+      <h4>Title of App.vue</h4>
+      <Styles />
+    </div>
   </div>
 </template>
 
@@ -19,8 +21,11 @@ export default {
 <style scoped>
 body {
   background-color: rgb(115, 115, 226);
-  display: flex;
   text-align: center;
+  margin-left: 0 auto;
+}
+main {
+  width: 100px;
 }
 h4 {
   color: orange;
