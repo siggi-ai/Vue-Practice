@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="main">
-      <h1>Dynamic Component</h1>
+      <h1>Dominic Component</h1>
       <button
         v-on:click="tabActive = 'TabA'"
         class="tab"
@@ -23,9 +23,10 @@
         C</button>
     </div>
     <div>
-      <TabA v-if="tabActive === 'TabA'" />
+      <!-- <TabA v-if="tabActive === 'TabA'" />
       <TabB v-if="tabActive === 'TabB'" />
-      <TabC v-if="tabActive === 'TabC'" />
+      <TabC v-if="tabActive === 'TabC'" /> -->
+      <component v-bind:is="tabActive" />
     </div>
   </div>
 </template>
