@@ -9,6 +9,6 @@ export default {
 <style>
 .content {
   padding: 40px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 </style>
