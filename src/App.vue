@@ -2,9 +2,25 @@
   <div>
     <div class="main">
       <h1>Dynamic Component</h1>
-      <button v-on:click="tabActive = 'TabA'" class="tab">A</button>
-      <button v-on:click="tabActive = 'TabB'" class="tab">B</button>
-      <button v-on:click="tabActive = 'TabC'" class="tab">C</button>
+      <button
+        v-on:click="tabActive = 'TabA'"
+        class="tab"
+        v-bind:class="{ 'tab-active': tabActive === 'TabA' }"
+      >
+        A
+      </button>
+      <button
+        v-on:click="tabActive = 'TabB'"
+        class="tab"
+        v-bind:class="{ 'tab-active': tabActive === 'TabB' }"
+      >
+        B
+      </button>
+      <button 
+        v-on:click="tabActive = 'TabC'" 
+        class="tab"
+        v-bind:class="{ 'tab-active': tabActive === 'TabC' }">
+        C</button>
     </div>
     <div>
       <TabA v-if="tabActive === 'TabA'" />
@@ -48,10 +64,13 @@ h4 {
   font-size: 1.4rem;
 }
 .tab {
-  color:rgb(115, 115, 226);
+  color: rgb(115, 115, 226);
   width: 100px;
   height: 100px;
   background-color: aqua;
   font-size: 50px;
+}
+.tab-active {
+  color: rgb(226, 115, 202);
 }
 </style>
