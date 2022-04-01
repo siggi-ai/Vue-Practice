@@ -1,19 +1,52 @@
 <template>
   <div>
     <div class="main">
-      <h1>Component Styles</h1>
-      <h4>Title of App.vue</h4>
-      <Styles />
+      <h1>Dynamic Component</h1>
+      <button
+        v-on:click="tabActivate = 'TabA'"
+        class="tab"
+        v-bind:class="{ 'tab-activate': tabActive === 'TabA' }"
+      >
+        A
+      </button>
+      <button
+        v-on:click="tabActivate = 'TabB'"
+        class="tab"
+        v-bind:class="{ 'tab-activate': tabActive === 'TabB' }"
+      >
+        B
+      </button>
+      <button
+        v-on:click="tabActivate = 'TabC'"
+        class="tab"
+        v-bind:class="{ 'tab-activate': tabActive === 'TabC' }"
+      >
+        C
+      </button>
+    </div>
+    <div>
+      <TabA v-if="tabActivate === 'TabA'" />
+      <TabB v-if="tabActivate === 'TabB'" />
+      <TabC v-if="tabActivate === 'TabC'" />
     </div>
   </div>
 </template>
 
 <script>
-import Styles from "./components/Styles.vue";
+import TabA from "./components/TabA.vue";
+import TabB from "./components/TabB.vue";
+import TabC from "./components/TabC.vue";
 export default {
   name: "App",
   components: {
-    Styles,
+    TabA,
+    TabB,
+    TabC,
+  },
+  data() {
+    return {
+      tabActivate: "TabA",
+    };
   },
 };
 </script>
