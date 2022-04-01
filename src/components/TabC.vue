@@ -1,9 +1,25 @@
 <template>
-  <div class="content">Content C</div>
+  <div class="content">
+    <label class="label" for="firstName">
+      <span class="label-text">Vorname</span>
+    </label>
+    <input 
+      type="text"
+      id="firstName"
+      v-model="firstName"
+      placeholder="Vorname"
+      class="input"
+    >
+  </div>
 </template>
 <script>
 export default {
   name: "TabC",
+  data () {
+    return {
+      firstName: "",
+    }
+  }
 };
 </script>
 <style>
