@@ -22,10 +22,9 @@ export default {
 body {
   background-color: rgb(115, 115, 226);
   text-align: center;
-  margin-left: 0 auto;
 }
-main {
-  width: 100px;
+.main {
+  margin-left: 0 auto;
 }
 h4 {
   color: orange;
