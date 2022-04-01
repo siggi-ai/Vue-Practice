@@ -1,49 +1,29 @@
 <template>
-  <div class="main">
-    <h1>Slot Props</h1>
-    <div>
-      <PlayersList>
-        <template v-slot:default="allPlayers">
-          {{ allPlayers.player.firstName }}
-          {{ allPlayers.player.lastName }}
-          <br />
-          Alter: {{ allPlayers.player.age }}
-        </template>
-      </PlayersList>
-    </div>
+  <div>
+    <h1>Component Styles</h1>
+    <h4>Title of App.vue</h4>
+    <Styles />
   </div>
 </template>
 
 <script>
-import PlayersList from "./components/PlayersList.vue";
+import Styles from "./components/Styles.vue";
 export default {
   name: "App",
   components: {
-    PlayersList,
+    Styles,
   },
 };
 </script>
 
-<style>
-.card {
-  padding: 10px;
-  border: 1px solid white;
-}
+<style scoped>
 body {
   background-color: rgb(115, 115, 226);
   display: flex;
   text-align: center;
 }
-
-.main {
-  padding: 100px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: white;
-  background-color: rgb(150 150 240);
-}
-
-.pic {
-  display: flex;
-  float: right;
+h4 {
+  color: orange;
+  font-size: 1.4rem;
 }
 </style>
