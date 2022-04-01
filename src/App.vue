@@ -16,17 +16,21 @@
       >
         B
       </button>
-      <button 
-        v-on:click="tabActive = 'TabC'" 
+      <button
+        v-on:click="tabActive = 'TabC'"
         class="tab"
-        v-bind:class="{ 'tab-active': tabActive === 'TabC' }">
-        C</button>
+        v-bind:class="{ 'tab-active': tabActive === 'TabC' }"
+      >
+        C
+      </button>
     </div>
     <div>
       <!-- <TabA v-if="tabActive === 'TabA'" />
       <TabB v-if="tabActive === 'TabB'" />
       <TabC v-if="tabActive === 'TabC'" /> -->
-      <component v-bind:is="tabActive" />
+      <keep-alive>
+        <component v-bind:is="tabActive" />
+      </keep-alive>
     </div>
   </div>
 </template>

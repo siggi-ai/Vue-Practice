@@ -3,23 +3,23 @@
     <label class="label" for="firstName">
       <span class="label-text">Vorname</span>
     </label>
-    <input 
+    <input
       type="text"
       id="firstName"
       v-model="firstName"
       placeholder="Vorname"
       class="input"
-    >
+    />
   </div>
 </template>
 <script>
 export default {
   name: "TabC",
-  data () {
+  data() {
     return {
       firstName: "",
-    }
-  }
+    };
+  },
 };
 </script>
 <style>
