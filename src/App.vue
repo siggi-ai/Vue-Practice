@@ -1,19 +1,19 @@
 <template>
   <div class="main">
-    <h1>Teleport</h1>
+    <h1>HTTP</h1>
     <teleport to="#portal">
-      <Portal />
+      <BlogList />
     </teleport>
   </div>
 </template>
 
 <script>
-import Portal from "./components/Portal";
+import BlogList from "./components/BlogList.vue";
 
 export default {
   name: "App",
   components: {
-    Portal,
+    BlogList,
   },
 };
 </script>
