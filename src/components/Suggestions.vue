@@ -1,10 +1,11 @@
 <template>
   <div>
     <div>
-      <button v-on:click="getBlogs">Lade Vorschlag</button>
+      <button v-on:click="getSugg" class="sugg-button">Lade Vorschlag</button>
     </div>
-    <div>
-      {{ blogs.activity }}
+    <br />
+    <div class="sugg-box">
+      {{ sugg.activity }}
     </div>
   </div>
 </template>
@@ -14,19 +15,19 @@ export default {
   name: "BlogList",
   data() {
     return {
-      blogs: [],
+      sugg: [],
     };
   },
   created() {
-    this.getBlogs();
+    this.getSugg();
   },
   methods: {
-    getBlogs() {
+    getSugg() {
       axios
         .get("https://www.boredapi.com/api/activity")
         .then((response) => {
           console.log("response: ", response.data);
-          this.blogs = response.data;
+          this.sugg = response.data;
         })
         .catch((error) => {
           console.log("error; ", error);
@@ -35,3 +36,15 @@ export default {
   },
 };
 </script>
+<style>
+.sugg-box {
+  border: 1px solid blue;
+  padding: 25px;
+}
+.sugg-button {
+  height: 47px;
+  width: 97px;
+  background-color: #59be00;
+  box-shadow: 5px 5px #888888;
+}
+</style>
