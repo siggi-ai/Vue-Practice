@@ -17,13 +17,13 @@ export default {
   methods: {
     getBlogs() {
       axios
-        .get("https://jsonplaceholder.typicode.com/posts")
+        .get("https://catfact.ninja/fact")
         .then((response) => {
           console.log("response: ", response.data);
         })
         .catch((error) => {
-        console.log("error; ", error);
-      });
+          console.log("error; ", error);
+        });
     },
   },
 };
