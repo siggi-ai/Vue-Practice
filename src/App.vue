@@ -1,12 +1,14 @@
 <template>
   <div class="main">
     <h1>Teleport</h1>
-    <Portal />
+    <teleport to="#portal">
+      <Portal />
+    </teleport>
   </div>
 </template>
 
 <script>
-import Portal from "./components/Portal.vue";
+import Portal from "./components/Portal";
 
 export default {
   name: "App",
