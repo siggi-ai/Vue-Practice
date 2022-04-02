@@ -1,55 +1,17 @@
 <template>
-  <div>
-    <div class="main">
-      <h1>Dominic Component</h1>
-      <button
-        v-on:click="tabActive = 'TabA'"
-        class="tab"
-        v-bind:class="{ 'tab-active': tabActive === 'TabA' }"
-      >
-        A
-      </button>
-      <button
-        v-on:click="tabActive = 'TabB'"
-        class="tab"
-        v-bind:class="{ 'tab-active': tabActive === 'TabB' }"
-      >
-        B
-      </button>
-      <button
-        v-on:click="tabActive = 'TabC'"
-        class="tab"
-        v-bind:class="{ 'tab-active': tabActive === 'TabC' }"
-      >
-        C
-      </button>
-    </div>
-    <div>
-      <!-- <TabA v-if="tabActive === 'TabA'" />
-      <TabB v-if="tabActive === 'TabB'" />
-      <TabC v-if="tabActive === 'TabC'" /> -->
-      <keep-alive>
-        <component v-bind:is="tabActive" />
-      </keep-alive>
-    </div>
+  <div class="main">
+    <h1>Teleport</h1>
+    <Portal />
   </div>
 </template>
 
 <script>
-import TabA from "./components/TabA.vue";
-import TabB from "./components/TabB.vue";
-import TabC from "./components/TabC.vue";
+import Portal from "./components/Portal.vue";
+
 export default {
   name: "App",
   components: {
-    TabA,
-    TabB,
-    TabC,
-  },
-  data() {
-    return {
-      tabActive: "TabA",
-    };
+    Portal,
   },
 };
 </script>
@@ -57,25 +19,14 @@ export default {
 <style scoped>
 body {
   background-color: rgb(115, 115, 226);
-  text-align: center;
 }
 .main {
+  text-align: center;
   margin-left: 0 auto;
   padding: 30px;
   font-size: 2rem;
-}
-h4 {
-  color: orange;
-  font-size: 1.4rem;
-}
-.tab {
-  color: rgb(115, 115, 226);
-  width: 100px;
-  height: 100px;
-  background-color: aqua;
-  font-size: 50px;
-}
-.tab-active {
-  color: rgb(226, 115, 202);
+  margin: 0 auto;
+  width: 500px;
+  font-family: 'Courier New', Courier, monospace;
 }
 </style>
