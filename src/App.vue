@@ -1,19 +1,24 @@
 <template>
-  <div class="main">
-    <h1>HTTP</h1>
-    <Suggestions />
-    <BlogList />
+  <div>
+    <div class="main">
+      <h1>HTTP</h1>
+      <Suggestions />
+      <br />
+    </div>
+    <div class="blogCreate main">
+      <BlogCreate />
+    </div>
   </div>
 </template>
 
 <script>
-import BlogList from "./components/BlogList.vue";
+import BlogCreate from "./components/BlogCreate.vue";
 import Suggestions from "./components/Suggestions.vue";
 
 export default {
   name: "App",
   components: {
-    BlogList,
+    BlogCreate,
     Suggestions,
   },
 };
@@ -27,9 +32,13 @@ body {
   text-align: center;
   margin-left: 0 auto;
   padding: 30px;
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 0 auto;
   width: 500px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
+}
+.blogCreate {
+  width: 240px;
+  text-align: ;
 }
 </style>
