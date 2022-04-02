@@ -1,8 +1,11 @@
 <template>
   <div>
     <div>
-      <button v-on:click="getBlogs">Lade die Blog-Artikel</button>
+      <button v-on:click="getBlogs">Lade Vorschlag</button>
     </div>
+      <div>
+        {{ blogs.activity }}
+      </div>
   </div>
 </template>
 <script>
@@ -14,12 +17,16 @@ export default {
       blogs: [],
     };
   },
+  created() {
+    this.getBlogs();
+  },
   methods: {
     getBlogs() {
       axios
-        .get("https://catfact.ninja/fact")
+        .get("https://www.boredapi.com/api/activity")
         .then((response) => {
           console.log("response: ", response.data);
+          this.blogs = response.data;
         })
         .catch((error) => {
           console.log("error; ", error);

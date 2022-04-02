@@ -1,9 +1,7 @@
 <template>
   <div class="main">
     <h1>HTTP</h1>
-    <teleport to="#portal">
-      <BlogList />
-    </teleport>
+    <BlogList />
   </div>
 </template>
 
