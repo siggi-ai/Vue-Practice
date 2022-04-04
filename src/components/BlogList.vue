@@ -1,10 +1,13 @@
 <template>
   <div>
-    <div>
+    <!--     <div>
       <button v-on:click="getBlogs">Lade Vorschlag</button>
-    </div>
-    <div>
-      {{ blogs.activity }}
+    </div> -->
+    <div v-for="blog in blogs" :key="blog.id">
+      <div>
+        <h2>{{ blog.title }}</h2>
+        {{ blogs.body }}
+      </div>
     </div>
   </div>
 </template>
@@ -12,18 +15,18 @@
 import axios from "axios";
 export default {
   name: "BlogList",
+  created() {
+    this.getBlogs();
+  },
   data() {
     return {
       blogs: [],
     };
   },
-  created() {
-    this.getBlogs();
-  },
   methods: {
     getBlogs() {
       axios
-        .get("https://www.boredapi.com/api/activity")
+        .get("https://jsonplaceholder.typicode.com/posts")
         .then((response) => {
           console.log("response: ", response.data);
           this.blogs = response.data;

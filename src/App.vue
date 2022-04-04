@@ -1,26 +1,27 @@
 <template>
   <div>
-    <h1>Lifecycle Hooks</h1>
+    <h1>HTTP GET with Lifecycle Hooks</h1>
     <div class="blogCreate main">
-      <Parent />
+      <BlogList />
     </div>
   </div>
 </template>
 
 <script>
-import Parent from "./components/Parent.vue";
+import BlogList from "./components/BlogList.vue";
 
 export default {
   name: "App",
   components: {
-    Parent,
+    BlogList,
   },
 };
 </script>
 
-<style scoped>
+<style>
 body {
   background-color: rgb(115, 115, 226);
+  font-family: "Courier New", Courier, monospace;
 }
 .main {
   text-align: center;
@@ -30,9 +31,10 @@ body {
   margin: 0 auto;
   width: 500px;
   font-family: "Courier New", Courier, monospace;
+  color: #000;
 }
 .blogCreate {
   width: 240px;
-  text-align: ;
+  text-align: center;
 }
 </style>
