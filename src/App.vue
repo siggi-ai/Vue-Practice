@@ -1,25 +1,19 @@
 <template>
   <div>
-    <div class="main">
-      <h1>HTTP</h1>
-      <Suggestions />
-      <br />
-    </div>
+    <h1>Lifecycle Hooks</h1>
     <div class="blogCreate main">
-      <BlogCreate />
+      <Parent />
     </div>
   </div>
 </template>
 
 <script>
-import BlogCreate from "./components/BlogCreate.vue";
-import Suggestions from "./components/Suggestions.vue";
+import Parent from "./components/Parent.vue";
 
 export default {
   name: "App",
   components: {
-    BlogCreate,
-    Suggestions,
+    Parent,
   },
 };
 </script>
