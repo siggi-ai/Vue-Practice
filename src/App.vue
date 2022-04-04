@@ -2,18 +2,18 @@
   <div>
     <h1>Template Refs</h1>
     <div class="blogCreate main">
-      <BlogList />
+      <TemplateRef />
     </div>
   </div>
 </template>
 
 <script>
-import BlogList from "./components/BlogList.vue";
+import TemplateRef from "./components/TemplateRef.vue";
 
 export default {
   name: "App",
   components: {
-    BlogList,
+    TemplateRef,
   },
 };
 </script>
