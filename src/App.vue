@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>HTTP GET with Lifecycle Hooks</h1>
+    <h1>Template Refs</h1>
     <div class="blogCreate main">
       <BlogList />
     </div>
