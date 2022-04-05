@@ -13,6 +13,7 @@ export default {
   name: "TemplateRef",
   mounted() {
     this.$refs.firstName.focus();
+     console.log(this.$refs.firstName);
   },
 };
 </script>
