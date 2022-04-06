@@ -3,17 +3,20 @@
     <h1>Mixins</h1>
     <div class="blogCreate main">
       <CounterByHover />
+      <CounterByClick />
     </div>
   </div>
 </template>
 
 <script>
 import CounterByHover from "./components/CounterByHover.vue";
+import CounterByClick from "./components/CounterByClick.vue";
 
 export default {
   name: "App",
   components: {
     CounterByHover,
+    CounterByClick,
   },
 };
 </script>
