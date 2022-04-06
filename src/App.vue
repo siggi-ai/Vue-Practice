@@ -1,19 +1,19 @@
 <template>
   <div>
-    <h1>Template Refs</h1>
+    <h1>CounterByHover</h1>
     <div class="blogCreate main">
-      <TemplateRef />
+      <CounterByHover />
     </div>
   </div>
 </template>
 
 <script>
-import TemplateRef from "./components/TemplateRef.vue";
+import CounterByHover from "./components/CounterByHover.vue";
 
 export default {
   name: "App",
   components: {
-    TemplateRef,
+    CounterByHover,
   },
 };
 </script>
