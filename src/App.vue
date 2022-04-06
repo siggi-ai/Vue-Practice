@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>CounterByHover</h1>
+    <h1>Mixins</h1>
     <div class="blogCreate main">
       <CounterByHover />
     </div>
