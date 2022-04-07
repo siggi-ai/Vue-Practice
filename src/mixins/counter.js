@@ -4,4 +4,9 @@ export default {
       count: 0,
     };
   },
+  methods: {
+    addCount() {
+      this.count += 1;
+    },
+  },
 };

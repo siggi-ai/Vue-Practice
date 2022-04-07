@@ -4,17 +4,9 @@
   </div>
 </template>
 <script>
+import CounterMixin from "../mixins/counter";
 export default {
   name: "Counter",
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  methods: {
-    addCount() {
-      this.count += 1;
-    },
-  },
+  mixins: [CounterMixin],
 };
 </script>

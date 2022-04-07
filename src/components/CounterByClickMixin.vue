@@ -10,11 +10,6 @@ import CounterMixin from "../mixins/counter";
 export default {
   name: "CounterByClickMixin",
   mixins: [CounterMixin],
-  methods: {
-    addCount() {
-      this.count += 1;
-    },
-  },
 };
 </script>
 <style>
