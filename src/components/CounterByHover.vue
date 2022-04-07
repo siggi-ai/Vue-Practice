@@ -7,6 +7,12 @@
 import CounterMixin from "../mixins/counter";
 export default {
   name: "Counter",
+  data() {
+    return {
+      counter: 100,
+    };
+  },
   mixins: [CounterMixin],
+  
 };
 </script>
