@@ -1,22 +1,24 @@
 <template>
   <div>
-    <h1>Mixins</h1>
+    <h1>Replacing data with ref</h1>
     <div class="blogCreate main">
-      <CounterByHover />
-      <CounterByClickMixin />
+      <Data />
+    </div>
+    <div class="blogCreate main">
+      <DataAPI />
     </div>
   </div>
 </template>
 
 <script>
-import CounterByHover from "./components/CounterByHover.vue";
-import CounterByClickMixin from "./components/CounterByClickMixin.vue";
+import Data from "./components/api/Data.vue";
+import DataAPI from "./components/api/DataAPI.vue";
 
 export default {
   name: "App",
   components: {
-    CounterByHover,
-    CounterByClickMixin,
+    Data,
+    DataAPI,
   },
 };
 </script>
@@ -25,6 +27,10 @@ export default {
 body {
   background-color: rgb(153, 153, 255);
   font-family: "Courier New", Courier, monospace;
+}
+h1 {
+  margin: 0 auto;
+  width: 200px;
 }
 .main {
   text-align: center;
