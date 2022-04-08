@@ -7,6 +7,7 @@ export default {
   name: "DataAPI",
   setup() {
     const firstName = ref("Klaus");
+    console.log("firstName: ", firstName);
     return {
       firstName: firstName,
     };
