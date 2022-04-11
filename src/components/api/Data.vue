@@ -7,6 +7,8 @@ export default {
   data() {
     return {
       firstName: "Klaus",
+      lastName: "Strumm",
+      club: "Peace Club",
     };
   },
 };
