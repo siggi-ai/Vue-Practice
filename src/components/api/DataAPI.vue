@@ -1,25 +1,23 @@
 <template>
   <h2>Neue Schreibweise:</h2>
-  <h3>{{ firstName }}</h3>
-  <h3>{{ lastName }}</h3>
-  <h3>{{ club }}</h3>
+  <h3>{{ state.firstName }}</h3>
+  <h3>{{ state.lastName }}</h3>
+  <h3>{{ state.club }}</h3>
   <p>{{ greeting }}</p>
 </template>
 <script>
-import { ref } from "vue";
+import { reactive } from "vue";
 export default {
   name: "DataAPI",
   setup() {
-    const firstName = ref("Klaus");
-    const lastName = ref("Müller");
-    const club = ref("Bayern München");
-    firstName.value = "Angela";
-    const greeting = `Hallo ${firstName.value} ${lastName.value} (${club.value})`;
-    console.log("firstName: ", firstName);
+    const state = reactive ({
+      firstName: "Fritz",
+      lastName: "Müller",
+      club: "Bayern München",
+    });
+    const greeting = `Hallo ${state.firstName} ${state.lastName} (${state.club})`;
     return {
-      firstName,
-      lastName,
-      club,
+      state,
       greeting,
     };
   },
