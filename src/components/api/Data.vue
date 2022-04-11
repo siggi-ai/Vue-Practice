@@ -1,5 +1,8 @@
 <template>
-  <h2>Alte Schreibweise: {{ firstName }}</h2>
+  <h2>Alte Schreibweise:</h2>
+  <h3>{{ firstName }}</h3>
+  <h3>{{ lastName }}</h3>
+  <h3>{{ club }}</h3>
 </template>
 <script>
 export default {
