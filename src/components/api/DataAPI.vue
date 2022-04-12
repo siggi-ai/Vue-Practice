@@ -14,6 +14,7 @@ export default {
       firstName: "Fritz",
       lastName: "Müller",
       club: "Bayern München",
+      hobby: "sailing",
     });
     const greeting = `Hallo ${state.firstName} ${state.lastName} (${state.club})`;
     return {
