@@ -3,6 +3,7 @@
   <h3>{{ firstName }}</h3>
   <h3>{{ lastName }}</h3>
   <h3>{{ club }}</h3>
+  <h3>{{ hobby }}</h3>
 </template>
 <script>
 export default {
