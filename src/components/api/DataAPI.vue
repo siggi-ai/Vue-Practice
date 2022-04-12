@@ -18,7 +18,7 @@ export default {
       hobby: "sailing",
     });
     const greeting = `Hallo ${state.firstName} ${state.lastName} (${state.club})`;
-    const introduction = `I am ${state.firstName} + ' ' + and I like ${state.hobby}`;
+    const introduction = `I am ${state.firstName} and I like ${state.hobby}!`;
     return {
       state,
       greeting,
