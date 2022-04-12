@@ -12,6 +12,7 @@ export default {
       firstName: "Klaus",
       lastName: "Strumm",
       club: "Peace Club",
+      hobby: "gardening",
     };
   },
 };
