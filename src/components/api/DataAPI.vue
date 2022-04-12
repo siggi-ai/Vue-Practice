@@ -14,7 +14,7 @@ export default {
     const state = reactive ({
       firstName: "Fritz",
       lastName: "Müller",
-      club: "Bayern München",
+      club: "Red Hat Club",
       hobby: "sailing",
     });
     const greeting = `Hallo ${state.firstName} ${state.lastName} (${state.club})`;
