@@ -4,12 +4,13 @@
   </div>
 </template>
 <script>
+import { ref } from "vue";
 export default {
   name: "ReactivityAPIA",
   setup() {
-    let framework = "Vue 2";
+    let framework = ref("Vue 2");
     setTimeout(() => {
-      framework = "vue 3";
+      framework.value = "vue 3";
       console.log("new framework:", framework);
     }, 2000);
     return {
