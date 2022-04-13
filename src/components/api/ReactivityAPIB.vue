@@ -9,8 +9,8 @@ export default {
   name: "ReactivityAPIA",
   setup() {
     const state = reactive({
-      firstName: "Angela",
-      lastName: "Merkel",
+      firstName: "Angelo",
+      lastName: "Bildani",
     });
     return {
       state,
