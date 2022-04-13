@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>replacing data with ref</h1>
+    <h1>Reactivity</h1>
     <div class="blogCreate main">
       <Data />
     </div>
