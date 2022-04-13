@@ -9,8 +9,8 @@ export default {
   name: "ReactivityAPIA",
   setup() {
     const state = reactive({
-      firstName: "Angelo",
-      lastName: "Bildani",
+      firstName: "Hansi",
+      lastName: "Hinterseer",
     });
     setTimeout(() => {
       (state.firstName = "Heino"),
