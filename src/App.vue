@@ -8,15 +8,11 @@
 </template>
 
 <script>
-import Data from "./components/api/Data.vue";
-import DataAPI from "./components/api/DataAPI.vue";
 import ReactivityAPIA from "./components/api/ReactivityAPIA.vue"
 
 export default {
   name: "App",
   components: {
-    Data,
-    DataAPI,
     ReactivityAPIA,
   },
 };
