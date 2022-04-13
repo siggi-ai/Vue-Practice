@@ -12,6 +12,11 @@ export default {
       firstName: "Angelo",
       lastName: "Bildani",
     });
+    setTimeout(() => {
+      (state.firstName = "Heino"),
+        (state.lastName = "Jäger"),
+        console.log("new state:", state);
+    }, 2000);
     return {
       firstName: state.firstName,
       lastName: state.lastName,
