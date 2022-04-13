@@ -3,17 +3,20 @@
     <h1>Reactivity</h1>
     <div class="blogCreate main">
       <ReactivityAPIA />
+      <ReactivityAPIB />
     </div>
   </div>
 </template>
 
 <script>
-import ReactivityAPIA from "./components/api/ReactivityAPIA.vue"
+import ReactivityAPIA from "./components/api/ReactivityAPIA.vue";
+import ReactivityAPIB from "./components/api/ReactivityAPIB.vue";
 
 export default {
   name: "App",
   components: {
     ReactivityAPIA,
+    ReactivityAPIB,
   },
 };
 </script>
