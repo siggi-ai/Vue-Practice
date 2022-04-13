@@ -2,10 +2,7 @@
   <div>
     <h1>Reactivity</h1>
     <div class="blogCreate main">
-      <Data />
-    </div>
-    <div class="blogCreate main">
-      <DataAPI />
+      <ReactivityAPIA />
     </div>
   </div>
 </template>
@@ -13,12 +10,14 @@
 <script>
 import Data from "./components/api/Data.vue";
 import DataAPI from "./components/api/DataAPI.vue";
+import ReactivityAPIA from "./components/api/ReactivityAPIA.vue"
 
 export default {
   name: "App",
   components: {
     Data,
     DataAPI,
+    ReactivityAPIA,
   },
 };
 </script>
