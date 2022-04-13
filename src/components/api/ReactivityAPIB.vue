@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>{{ state.firstName }} {{ state.lastName }}</h2>
+    <h2>{{ firstName }} {{ lastName }}</h2>
   </div>
 </template>
 <script>
@@ -13,7 +13,8 @@ export default {
       lastName: "Bildani",
     });
     return {
-      state,
+      firstName: state.firstName,
+      lastName: state.lastName,
     };
   },
 };
