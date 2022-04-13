@@ -4,7 +4,7 @@
   </div>
 </template>
 <script>
-import { reactive } from "vue";
+import { reactive, toRefs } from "vue";
 export default {
   name: "ReactivityAPIA",
   setup() {
@@ -17,10 +17,7 @@ export default {
         (state.lastName = "Jäger"),
         console.log("new state:", state);
     }, 2000);
-    return {
-      firstName: state.firstName,
-      lastName: state.lastName,
-    };
+    return toRefs(state);
   },
 };
 </script>
