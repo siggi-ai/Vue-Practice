@@ -16,7 +16,7 @@ export default {
       (state.firstName = "Heino"),
         (state.lastName = "Jäger"),
         console.log("new state:", state);
-    }, 2000);
+    }, 3000);
     return toRefs(state);
   },
 };
