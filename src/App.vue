@@ -2,21 +2,24 @@
   <div>
     <h1>Methods</h1>
     <div class="blogCreate main">
-      <ReactivityAPIA />
-      <ReactivityAPIB />
+      <Methods />
+      <MethodsAPIRef />
+      <MethodsAPIReactive />
     </div>
   </div>
 </template>
 
 <script>
-import ReactivityAPIA from "./components/api/ReactivityAPIA.vue";
-import ReactivityAPIB from "./components/api/ReactivityAPIB.vue";
+import Methods from "./components/api/Methods.vue";
+import MethodsAPIRef from "./components/api/MethodsAPIRef.vue";
+import MethodsAPIReactive from "./components/api/MethodsAPIReactive.vue";
 
 export default {
   name: "App",
   components: {
-    ReactivityAPIA,
-    ReactivityAPIB,
+    Methods,
+    MethodsAPIRef,
+    MethodsAPIReactive,
   },
 };
 </script>
