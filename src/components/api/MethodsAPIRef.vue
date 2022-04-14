@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Alte Schreibweise</h2>
+    <h2>Neue Schreibweise</h2>
     <h3>{{ firstName }} {{ lastName }}</h3>
     <h4>{{ goals }}</h4>
     <button v-on:click.prevent="changeName">Namen ändern</button>
@@ -8,22 +8,28 @@
   </div>
 </template>
 <script>
+import { ref } from "vue";
 export default {
-  name: "Methods",
-  data() {
-    return {
-      firstName: "Gerd",
-      lastName: "Hamm",
-      goals: 0,
-    };
-  },
-  methods: {
-    changeName() {
+  name: "MethodsAPIRef",
+  setup() {
+    const firstName = ref("Gerd");
+    const lastName = ref("Hamm");
+    const goals = ref(0);
+
+    function changeName() {
       this.firstName = "Siegfried";
-    },
-    newGoal() {
-      this.goals++;
-    },
+      this.lastName = "Choi";
+    }
+    function newGoal() {
+      goals.value++;
+    }
+    return {
+      firstName,
+      lastName,
+      goals,
+      changeName,
+      newGoal,
+    };
   },
 };
 </script>

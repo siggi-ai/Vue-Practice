@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2>Neue Schreibweise</h2>
+    <h2>Neue Schreibweise mit Reactive</h2>
     <h3>{{ firstName }} {{ lastName }}</h3>
     <h4>{{ goals }}</h4>
     <button v-on:click.prevent="changeName">Namen ändern</button>
@@ -8,25 +8,25 @@
   </div>
 </template>
 <script>
-import { ref } from "vue";
+import { reactive, toRefs } from "vue";
 export default {
-  name: "MethodsAPIRef",
+  name: "MethodsAPIReactive",
   setup() {
-    const firstName = ref("Gerd");
-    const lastName = ref("Hamm");
-    const goals = ref(0);
+    const state = reactive({
+      firstName: "Gerd",
+      lastName: "Hamm",
+      goals: 0,
+    });
 
     function changeName() {
       this.firstName = "Siegfried";
       this.lastName = "Choi";
     }
     function newGoal() {
-      goals.value++;
+      state.goals++;
     }
     return {
-      firstName,
-      lastName,
-      goals,
+      ...toRefs(state),
       changeName,
       newGoal,
     };
