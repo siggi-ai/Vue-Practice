@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Reactivity</h1>
+    <h1>Methods</h1>
     <div class="blogCreate main">
       <ReactivityAPIA />
       <ReactivityAPIB />
