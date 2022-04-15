@@ -2,24 +2,24 @@
   <div>
     <h1>v-model & Composition API</h1>
     <div class="blogCreate main">
-      <Methods />
-      <MethodsAPIRef />
-      <MethodsAPIReactive />
+      <VModel />
+      <VModelAPIRef />
+      <VModelAPIReactive />
     </div>
   </div>
 </template>
 
 <script>
-import Methods from "./components/api/Methods.vue";
-import MethodsAPIRef from "./components/api/MethodsAPIRef.vue";
-import MethodsAPIReactive from "./components/api/MethodsAPIReactive.vue";
+import VModel from "./components/api/VModelAPIReactive.vue";
+import VModelAPIRef from "./components/api/VModelAPIRef.vue";
+import VModelAPIReactive from "./components/api/VModelAPIReactive.vue";
 
 export default {
   name: "App",
   components: {
-    Methods,
-    MethodsAPIRef,
-    MethodsAPIReactive,
+    VModel,
+    VModelAPIRef,
+    VModelAPIReactive,
   },
 };
 </script>
