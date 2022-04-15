@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Methods</h1>
+    <h1>v-model & Composition API</h1>
     <div class="blogCreate main">
       <Methods />
       <MethodsAPIRef />
