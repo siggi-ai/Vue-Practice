@@ -18,7 +18,7 @@
       v-model="lastName"
       placeholder="Nachname"
     />
-    <h2>{{ fullName }}</h2>
+    <h2>Hello {{ fullName }} !</h2>
   </div>
 </template>
 <script>
