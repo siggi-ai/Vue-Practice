@@ -1,13 +1,13 @@
 <template>
   <div>
-    <h1>v-model & Composition API</h1>
+    <h1>Computed Properties & Composition API</h1>
     <div class="blogCreate main">
       <h4>AlteSchreibweise</h4>
-      <VModel />
+      <Computed />
       <h4>Compostion API mit Ref</h4>
-      <VModelAPIRef />
+      <ComputedAPIRef />
       <h4>Composition API mit Reactive</h4>
-      <VModelAPIReactive />
+      <ComputedAPIReactive />
     </div>
   </div>
 </template>
