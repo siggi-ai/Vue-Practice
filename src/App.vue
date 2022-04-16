@@ -2,8 +2,11 @@
   <div>
     <h1>v-model & Composition API</h1>
     <div class="blogCreate main">
+      <h4>AlteSchreibweise</h4>
       <VModel />
+      <h4>Compostion API mit Ref</h4>
       <VModelAPIRef />
+      <h4>Composition API mit Reactive</h4>
       <VModelAPIReactive />
     </div>
   </div>
