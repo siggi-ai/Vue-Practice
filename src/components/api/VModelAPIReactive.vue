@@ -15,13 +15,23 @@
     <input
       type="text"
       id="lastName"
-      v-model="firstName"
-      placeholder="Vorname"
+      v-model="lastName"
+      placeholder="Nachname"
     />
   </div>
 </template>
 <script>
+import { reactive, toRefs } from "vue";
 export default {
   name: "VModelAPIReactive",
+  setup() {
+    const state = reactive({
+      firstName: "",
+      lastName: "",
+    });
+    return {
+      ...toRefs(state),
+    };
+  },
 };
 </script>
