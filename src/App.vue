@@ -1,28 +1,28 @@
 <template>
   <div>
-    <h1>Computed Properties & Composition API</h1>
+    <h1>Watch & Composition API</h1>
     <div class="blogCreate main">
       <h4>AlteSchreibweise</h4>
-      <Computed />
+      <Watch />
       <h4>Compostion API mit Ref</h4>
-      <ComputedAPIRef />
+      <WatchAPIRef />
       <h4>Composition API mit Reactive</h4>
-      <ComputedAPIReactive />
+      <WatchAPIReactive />
     </div>
   </div>
 </template>
 
 <script>
-import Computed from "./components/api/Computed.vue";
-import ComputedAPIRef from "./components/api/ComputedAPIRef.vue";
-import ComputedAPIReactive from "./components/api/ComputedAPIReactive.vue";
+import Watch from "./components/api/Watch.vue";
+import WatchAPIRef from "./components/api/WatchAPIRef.vue";
+import WatchAPIReactive from "./components/api/WatchAPIReactive.vue";
 
 export default {
   name: "App",
   components: {
-    Computed,
-    ComputedAPIRef,
-    ComputedAPIReactive,
+    Watch,
+    WatchAPIRef,
+    WatchAPIReactive,
   },
 };
 </script>

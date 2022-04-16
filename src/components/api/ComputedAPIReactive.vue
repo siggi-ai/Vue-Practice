@@ -35,7 +35,7 @@ export default {
     });
     //
     return {
-      ...toRefs(state),  
+      ...toRefs(state),
       fullName,
     };
   },
