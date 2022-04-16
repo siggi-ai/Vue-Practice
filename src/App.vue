@@ -13,16 +13,16 @@
 </template>
 
 <script>
-import VModel from "./components/api/VModelAPIReactive.vue";
-import VModelAPIRef from "./components/api/VModelAPIRef.vue";
-import VModelAPIReactive from "./components/api/VModelAPIReactive.vue";
+import Computed from "./components/api/Computed.vue";
+import ComputedAPIRef from "./components/api/ComputedAPIRef.vue";
+import ComputedAPIReactive from "./components/api/ComputedAPIReactive.vue";
 
 export default {
   name: "App",
   components: {
-    VModel,
-    VModelAPIRef,
-    VModelAPIReactive,
+    Computed,
+    ComputedAPIRef,
+    ComputedAPIReactive,
   },
 };
 </script>
