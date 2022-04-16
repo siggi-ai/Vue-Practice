@@ -15,8 +15,8 @@
     <input
       type="text"
       id="lastName"
-      v-model="firstName"
-      placeholder="Vorname"
+      v-model="lastName"
+      placeholder="Nachname"
     />
     <h2>{{ fullName }}</h2>
   </div>
