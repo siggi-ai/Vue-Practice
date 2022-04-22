@@ -26,6 +26,9 @@ export default {
     const state = reactive({
       firstName: "Uwe",
       lastName: "Seeler",
+      skills: {
+        offensive: 9,
+      },
     });
     watch(
       () => state.firstName,
