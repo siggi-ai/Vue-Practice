@@ -15,6 +15,12 @@
       v-model="lastName"
       placeholder="Nachname"
     />
+    <input
+      type="text"
+      id="offensiveAPIReaction"
+      v-model.number="skills.offensive"
+      placeholder="Offensivfähigkeit"
+    />
   </div>
 </template>
 <script>
