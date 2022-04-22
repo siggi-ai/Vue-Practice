@@ -37,12 +37,21 @@ export default {
       },
     });
     watch(
-      () => state.firstName,
+/*       () => state.firstName,
       function (newValue, oldValue) {
         console.log("WatchAPIReactive old value: ", oldValue);
         console.log("WatchAPIReactive new value: ", newValue);
+      }, */
+      () => state.skills,
+      function (newValue, oldValue) {
+        console.log("WatchAPIReactive state.skills old value: ", oldValue);
+        console.log("WatchAPIReactive state.skills new value: ", newValue);
+      },
+      {
+        deep: true,
       }
     );
+
     return {
       ...toRefs(state),
     };
