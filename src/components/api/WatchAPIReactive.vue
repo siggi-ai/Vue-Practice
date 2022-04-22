@@ -28,15 +28,10 @@ export default {
       lastName: "Seeler",
     });
     watch(
-      () => {
-        return { ...state };
-      },
+      () => state.firstName,
       function (newValue, oldValue) {
         console.log("WatchAPIReactive old value: ", oldValue);
         console.log("WatchAPIReactive new value: ", newValue);
-      },
-      {
-        immediate: true,
       }
     );
     return {
