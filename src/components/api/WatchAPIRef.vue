@@ -23,8 +23,8 @@ export default {
   name: "WatchAPIRef",
   //
   setup() {
-    const firstName = ref("Klaus");
-    const lastName = ref("Fischer");
+    const firstName = ref("");
+    const lastName = ref("");
 
     watch(
       [firstName, lastName],

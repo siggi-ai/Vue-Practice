@@ -23,8 +23,8 @@ export default {
   //
   data() {
     return {
-      firstName: "Gerd",
-      lastName: "Müller",
+      firstName: "",
+      lastName: "",
     };
   },
   watch: {

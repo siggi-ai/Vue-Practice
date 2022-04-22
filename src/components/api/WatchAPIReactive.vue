@@ -28,7 +28,9 @@ export default {
       lastName: "Seeler",
     });
     watch(
-      state,
+      () => {
+        return { ...state };
+      },
       function (newValue, oldValue) {
         console.log("WatchAPIReactive old value: ", oldValue);
         console.log("WatchAPIReactive new value: ", newValue);
