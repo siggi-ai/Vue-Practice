@@ -26,14 +26,18 @@ export default {
     const firstName = ref("Klaus");
     const lastName = ref("Fischer");
 
-    watch(firstName, (newValue, oldValue) => {
-      console.log("WatchAPIRef firstName old value: ", oldValue);
-      console.log("WatchAPIRef firstName new value: ", newValue);
-    }),
-      watch(lastName, (newValue, oldValue) => {
-        console.log("WatchAPIRef lastName old value: ", oldValue);
-        console.log("WatchAPIRef lastName new value: ", newValue);
-      });
+    watch(
+      [firstName, lastName],
+      (newValue, oldValue) => {
+        console.log("WatchAPIRef firstName old value: ", oldValue[0]);
+        console.log("WatchAPIRef firstName new value: ", newValue[0]);
+        console.log("WatchAPIRef lastName old value: ", oldValue[1]);
+        console.log("WatchAPIRef lastName new value: ", newValue[1]);
+      },
+      {
+        immediate: true,
+      }
+    );
     return {
       firstName,
       lastName,
