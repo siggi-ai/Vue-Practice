@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h4>KidC</h4>
+    <h4>Kid C</h4>
     <div>Name of the framework: {{ frameworkName }}</div>
   </div>
 </template>
