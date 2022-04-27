@@ -21,11 +21,12 @@ export default {
 
 <style>
 body {
-  background-color: rgb(153, 153, 255);
+  background-color: rgb(117, 117, 255);
   font-family: "Courier New", Courier, monospace;
 }
 h1 {
   margin: 0 auto;
+  margin-top: 50px;
   width: 200px;
 }
 .main {
