@@ -1,20 +1,20 @@
 <template>
   <div>
-    <h1>Provide & Inject</h1>
+    <h1>Provide & Inject (Composition API)</h1>
     <div class="blogCreate main">
       <h4>AlteSchreibweise</h4>
-      <ProvideInject />
+      <ProvideInjectAPI />
     </div>
   </div>
 </template>
 
 <script>
-import ProvideInject from "./components/ProvideInject.vue";
+import ProvideInjectAPI from "./components/ProvideInjectAPI.vue";
 
 export default {
   name: "App",
   components: {
-    ProvideInject,
+    ProvideInjectAPI,
   },
 };
 </script>
