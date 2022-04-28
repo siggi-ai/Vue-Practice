@@ -10,7 +10,7 @@ export default {
   name: "KidCAPI",
   //
   setup() {
-    const frameworkNameAPI = inject("framworkNameAPI", "Default framework");
+    const frameworkNameAPI = inject("frameworkNameAPI", "Default framework");
     //
     return {
       frameworkNameAPI,
