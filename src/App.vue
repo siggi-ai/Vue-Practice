@@ -2,7 +2,7 @@
   <div>
     <h1>Provide & Inject (Composition API)</h1>
     <div class="blogCreate main">
-      <h4>AlteSchreibweise</h4>
+      <h4>Neue Schreibweise</h4>
       <ProvideInjectAPI />
     </div>
   </div>
