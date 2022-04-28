@@ -16,5 +16,8 @@ export default {
   setup() {
     provide("frameworkNameAPI", "Vue 3");
   },
+  provide: {
+    message: "hello",
+  },
 };
 </script>
