@@ -2,6 +2,7 @@
   <div>
     <h4>Kid C</h4>
     <p>Spieler: {{ firstName }} {{ lastName }}</p>
+    <p>erzielte Bundesligatore: {{ childGoals }}</p>
   </div>
 </template>
 <script>
