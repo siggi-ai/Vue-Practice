@@ -17,9 +17,9 @@ export default {
       frameworkNameAPI,
     };
   },
-  inject: ['message'],
+  inject: ["message"],
   created() {
-    console.log(this.message) // injected value
-  }
+    console.log(this.message); // injected value
+  },
 };
 </script>
