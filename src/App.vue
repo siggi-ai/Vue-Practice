@@ -1,26 +1,20 @@
 <template>
   <div>
-    <h1>Lifecycle Hooks (Composition API)</h1>
+    <h1>Template Refs (Composition API)</h1>
     <div class="blogCreate main">
       <h4>Alte Schreibweise</h4>
-      <Lifecycle />
-    </div>
-    <div class="blogCreate main">
-      <h4>Composition API</h4>
-      <LifecycleAPI />
+      <TemplateRef />
     </div>
   </div>
 </template>
 
 <script>
-import Lifecycle from "./components/Lifecycle.vue";
-import LifecycleAPI from "./components/LifecycleAPI";
+import TemplateRef from "./components/TemplateRef.vue";
 
 export default {
   name: "App",
   components: {
-    Lifecycle,
-    LifecycleAPI,
+    TemplateRef,
   },
 };
 </script>
