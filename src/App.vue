@@ -4,17 +4,20 @@
     <div class="blogCreate main">
       <h4>Alte Schreibweise</h4>
       <TemplateRef />
+      <TemplateRefAPI />
     </div>
   </div>
 </template>
 
 <script>
 import TemplateRef from "./components/TemplateRef.vue";
+import TemplateRefAPI from "./components/TemplateRefAPI.vue";
 
 export default {
   name: "App",
   components: {
     TemplateRef,
+    TemplateRefAPI,
   },
 };
 </script>
