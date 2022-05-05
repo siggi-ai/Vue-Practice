@@ -1,20 +1,26 @@
 <template>
   <div>
-    <h1>Provide & Inject (Composition API)</h1>
+    <h1>Lifecycle Hooks (Composition API)</h1>
     <div class="blogCreate main">
-      <h4>Neue Schreibweise</h4>
-      <ProvideInjectAPI />
+      <h4>Alte Schreibweise</h4>
+      <Lifecycle />
+    </div>
+    <div class="blogCreate main">
+      <h4>Composition API</h4>
+      <LifecycleAPI />
     </div>
   </div>
 </template>
 
 <script>
-import ProvideInjectAPI from "./components/ProvideInjectAPI.vue";
+import Lifecycle from "./components/Lifecycle.vue";
+import LifecycleAPI from "./components/LifecycleAPI";
 
 export default {
   name: "App",
   components: {
-    ProvideInjectAPI,
+    Lifecycle,
+    LifecycleAPI,
   },
 };
 </script>
